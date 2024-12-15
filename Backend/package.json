@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend Blogs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SohamV8/astropathshala.git"
+  },
+  "author": "Astro Pathshala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SohamV8/astropathshala/issues"
+  },
+  "homepage": "https://github.com/SohamV8/astropathshala#readme",
+  "keywords": []
+}
