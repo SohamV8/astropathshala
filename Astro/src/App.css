@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  
+  body{
+    background-color: #fdfdfb;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+
+  body::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: -webkit-radial-gradient(
+      circle,
+      #b9a8fd 0%,
+      #fd1d83 50%,
+      #fcc545 100%
+    );
+  }

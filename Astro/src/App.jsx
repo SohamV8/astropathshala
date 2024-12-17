@@ -8,6 +8,8 @@ import Gems from './Pages/Gems';
 import Courses from './Pages/Courses';
 import Combo from './Pages/Combo';
 import AboutUs from './Pages/AboutUs';
+import Services from './Pages/Services';
+import Books from './Pages/Books';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/Service" element={<Services />} />
+          <Route path="/Books" element={<Books />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/gems" element={<Gems />} />
           <Route path="/courses" element={<Courses />} />
