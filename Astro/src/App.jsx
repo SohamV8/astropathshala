@@ -1,18 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 import Header from './Components/Header';
 import Home from './Pages/Home';
 import Blogs from './Pages/Blogs';
-import Consultation from './Pages/Consultation';
 import Gems from './Pages/Gems';
 import Courses from './Pages/Courses';
 import Combo from './Pages/Combo';
 import AboutUs from './Pages/AboutUs';
 import Services from './Pages/Services';
 import Books from './Pages/Books';
+import Footer from './Components/Footer';
 
 function App() {
   return (
+    <>
+   
     <Router>
       <Header />
       <div className="app-container">
@@ -21,7 +24,6 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/Service" element={<Services />} />
           <Route path="/Books" element={<Books />} />
-          <Route path="/consultation" element={<Consultation />} />
           <Route path="/gems" element={<Gems />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/combo" element={<Combo />} />
@@ -29,6 +31,9 @@ function App() {
         </Routes>
       </div>
     </Router>
+
+    <Footer />
+    </>
   );
 }
 

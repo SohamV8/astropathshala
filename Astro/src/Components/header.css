@@ -1,0 +1,103 @@
+/* Header Container */
+.page-header {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1000;
+  margin-bottom: -18px;
+  padding: 8px 0; /* Reduced padding for a cleaner look */
+}
+
+/* Centered Content */
+.head {
+  display: flex;
+  justify-content: center; /* Centered content */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Max width for alignment */
+  padding: 0 15px; /* Reduced padding for a more modern look */
+}
+
+/* Navbar Links */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* Increased gap between links */
+  justify-content: center; /* Center the navbar links */
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px; /* Slightly reduced font size for a clean, modern feel */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #FFDB58; /* Highlight color on hover */
+}
+
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  height: 70px;
+  width: 70px;
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 60px; /* Height of the header */
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding-top: 20px;
+    transition: left 0.5s ease;
+  }
+
+  .navbar.open {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #ffffff;
+    font-size: 24px; /* Adjusted font size for mobile */
+    margin: 20px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
