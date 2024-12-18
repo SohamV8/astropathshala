@@ -1,16 +1,18 @@
-import React from 'react'
-import Carousel from '../Components/HomeComponents/Carousel'
-import AstroAbout from '../Components/HomeComponents/AstroAbout'
-import Jyotishbook from '../Components/Jyotishbook'
+import React from 'react';
+import CustomCarousel from '../Components/HomeComponents/Carousel';
+import AstroAbout from '../Components/HomeComponents/AstroAbout';
+import Jyotishbook from '../Components/HomeComponents/Jyotishbook';
+import Package from '../Components/HomeComponents/Package';
 
 function Home() {
   return (
     <div>
-      <Carousel />
+      <CustomCarousel />
       <AstroAbout />
-<Jyotishbook />
+      <Jyotishbook />
+      <Package />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -1,0 +1,180 @@
+ 
+  .button-container {
+    position: relative;
+  }
+  
+  .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: 10;
+    box-shadow: 0px 0px 8px 0px #FDFCA9 inset, 0px 0px 24px 0px #FFEB3B, 0px 0px 8px 0px #FFFFFF42;
+  }
+  
+  .button-wrapper {
+    position: relative;
+  }
+  
+  .button {
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    appearance: none;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: bold;
+    background-color: #FFEB3B;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 999px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .button::before {
+    box-shadow: 0px 0px 24px 0px #FFEB3B;
+  }
+  
+  .button::after {
+    box-shadow: 0px 0px 23px 0px #FDFCA9 inset, 0px 0px 8px 0px #FFFFFF42;
+  }
+  
+  .button-wrapper:hover .button::before,
+  .button-wrapper:hover .button::after {
+    opacity: 1;
+  }
+  
+  .dot {
+    display: block;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transform: translate(var(--starting-x), var(--starting-y)) rotate(var(--rotation));
+    animation: hoverFirefly var(--speed) infinite, dimFirefly var(--speed) infinite calc(var(--speed) / 3);
+    opacity: 0.7;
+  }
+  
+  .dot::after {
+    content: "";
+    display: block;
+    background: yellow;
+    box-shadow: 0px 0px 6px 0px #FFEB3B, 0px 0px 4px 0px #FDFCA9 inset, 0px 0px 2px 1px #FFFFFF42;
+    animation-play-state: paused;
+  }
+  
+  .dot-1 {
+    --rotation: 0deg;
+    --speed: 14s;
+    --size: 6px;
+    --starting-x: 30px;
+    --starting-y: 20px;
+  }
+  
+  .dot-2 {
+    --rotation: 122deg;
+    --speed: 16s;
+    --size: 3px;
+    --starting-x: 40px;
+    --starting-y: 10px;
+  }
+  
+  .dot-3 {
+    --rotation: 39deg;
+    --speed: 20s;
+    --size: 4px;
+    --starting-x: -10px;
+    --starting-y: 20px;
+  }
+  
+  .dot-4 {
+    --rotation: 220deg;
+    --speed: 18s;
+    --size: 2px;
+    --starting-x: -30px;
+    --starting-y: -5px;
+  }
+  
+  .dot-5 {
+    --rotation: 190deg;
+    --speed: 22s;
+    --size: 5px;
+    --starting-x: -40px;
+    --starting-y: -20px;
+  }
+  
+  .dot-6 {
+    --rotation: 20deg;
+    --speed: 15s;
+    --size: 4px;
+    --starting-x: 12px;
+    --starting-y: -18px;
+  }
+  
+  .dot-7 {
+    --rotation: 300deg;
+    --speed: 19s;
+    --size: 3px;
+    --starting-x: 6px;
+    --starting-y: -20px;
+  }
+  
+  @keyframes hoverFirefly {
+    0% {
+      transform: translate(0, 0);
+    }
+    12% {
+      transform: translate(3px, 1px);
+    }
+    24% {
+      transform: translate(-2px, 3px);
+    }
+    37% {
+      transform: translate(2px, -2px);
+    }
+    55% {
+      transform: translate(-1px, 0);
+    }
+    74% {
+      transform: translate(0, 2px);
+    }
+    88% {
+      transform: translate(-3px, -1px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes dimFirefly {
+    0%, 100% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    75% {
+      opacity: 0.5;
+    }
+  }
+  

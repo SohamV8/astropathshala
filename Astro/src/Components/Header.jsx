@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png'; // Ensure the logo image path is correct
+import Logo from '../assets/logo.png'; 
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
