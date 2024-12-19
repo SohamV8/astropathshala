@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Mybutton from '../Mybutton'; // Assuming Mybutton component exists
 import './Package.css';
 import Book from '../../assets/Untitled-1.png'; // Make sure this path is correct
+import MyButton from '../Mybutton';
 
 function Package() {
   const [scrollY, setScrollY] = useState(0);
@@ -27,7 +27,7 @@ function Package() {
           <h3 className="text-lg text-black max-w-lg mx-auto mb-6">
             Learn from our package
           </h3>
-          <Mybutton />
+          <MyButton text="Buy Now" />
         </div>
 
         <div className="parallax-images">

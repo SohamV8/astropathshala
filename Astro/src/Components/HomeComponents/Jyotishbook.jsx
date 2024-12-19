@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Jyotishbook.css"; // Ensure this file is present and correctly referenced
-import Mybutton from "../Mybutton";
+import MyButton from "../Mybutton";
 
 const Jyotishbook = () => {
   const [bookClass, setBookClass] = useState("view-cover");
@@ -19,7 +19,7 @@ const Jyotishbook = () => {
       <h3 className="text-lg text-gray-300">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda laborum asperiores voluptas earum mollitia odit blanditiis eveniet optio a reprehenderit.
       </h3>
-      <Mybutton />
+      <MyButton text="Buy Now" />
     </div>
     <div className={`book-container ${bookClass}`}>
       <div className="main">
