@@ -68,7 +68,7 @@ const MyButton = ({ text }) => {
 const StyledWrapper = styled.div`
   button {
     position: relative;
-    padding: 20px 35px;
+    padding: 10px 25px;
     background: #FFD700; /* Golden yellow mustard */
     font-size: 20px;
     font-weight: 600;

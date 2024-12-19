@@ -2,8 +2,8 @@ import React from 'react';
 import CustomCarousel from '../Components/HomeComponents/Carousel';
 import AstroAbout from '../Components/HomeComponents/AstroAbout';
 import Jyotishbook from '../Components/HomeComponents/Jyotishbook';
-import Package from '../Components/HomeComponents/Package';
 import GemsHome from '../Components/HomeComponents/GemsHome';
+import Pack from '../Components/HomeComponents/Pack';
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
       <CustomCarousel />
       <AstroAbout />
       <Jyotishbook />
-      <Package />
+      <Pack />
       <GemsHome/>
     </div>
   );

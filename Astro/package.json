@@ -18,6 +18,7 @@
     "clsx": "^2.1.1",
     "flipping": "^1.1.0",
     "framer-motion": "^11.15.0",
+    "gsap": "^3.12.5",
     "kinet": "^2.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
