@@ -1,32 +1,31 @@
-import React from 'react'
+import React from "react";
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-  } from "@material-tailwind/react";
-   
-  
-function CourseCard() {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
+function CourseCard({ image, title, price, description, onAddToCart }) {
   return (
-    <div>
-      <Card className="w-96">
-        <CardHeader shadow={false} floated={false} className=" h-[225px] w-[300px]">
+    <div className="flex justify-center items-center">
+      <Card className="w-[325px] h-auto flex flex-col items-center justify-center">
+        <CardHeader shadow={false} floated={false} className="h-[225px] w-[300px]">
           <img
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
-            alt="card-image"
+            src={image}
+            alt={title}
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody>
+        <CardBody className="w-full">
           <div className="mb-2 flex items-center justify-between">
             <Typography color="blue-gray" className="font-medium">
-              Apple AirPods
+              {title}
             </Typography>
             <Typography color="blue-gray" className="font-medium">
-              $95.00
+              ${price}
             </Typography>
           </div>
           <Typography
@@ -34,14 +33,14 @@ function CourseCard() {
             color="gray"
             className="font-normal opacity-75"
           >
-            With plenty of talk and listen time, voice-activated Siri access, and
-            an available wireless charging case.
+            {description}
           </Typography>
         </CardBody>
-        <CardFooter className="pt-0">
+        <CardFooter className="pt-0 w-full">
           <Button
             ripple={false}
             fullWidth={true}
+            onClick={onAddToCart}
             className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
           >
             Add to Cart
@@ -49,7 +48,7 @@ function CourseCard() {
         </CardFooter>
       </Card>
     </div>
-  )
+  );
 }
 
-export default CourseCard
+export default CourseCard;

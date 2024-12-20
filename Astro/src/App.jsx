@@ -12,27 +12,57 @@ import Services from './Pages/Services';
 import Books from './Pages/Books';
 import Footer from './Components/Footer';
 
+// Importing Courses
+import KP from './Pages/Courses/KP';
+import Lalcourse from './Pages/Courses/Lalcourse';
+import Nadi from './Pages/Courses/Nadi';
+import Numerology from './Pages/Courses/Numerology';
+import Tarotcourse from './Pages/Courses/Tarotcourse';
+import Vediccourse from './Pages/Courses/Vediccourse';
+import Workshops from './Pages/Courses/Workshops';
+
+// Importing Services
+import Consultation from './Pages/Service/Consultation';
+import PathPooja from './Pages/Service/PathPooja';
+import Tarot from './Pages/Service/Tarot';
+import Vastu from './Pages/Service/Vastu';
+
 function App() {
   return (
     <>
-   
-    <Router>
-      <Header />
-      <div className="app-container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/Service" element={<Services />} />
-          <Route path="/Books" element={<Books />} />
-          <Route path="/gems" element={<Gems />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/combo" element={<Combo />} />
-          <Route path="/about-us" element={<AboutUs />} />
-        </Routes>
-      </div>
-    </Router>
+      <Router>
+        <Header />
+        <div className="app-container">
+          <Routes>
+            {/* Main Pages */}
+            <Route path="/" element={<Home />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/service" element={<Services />} />
+            <Route path="/books" element={<Books />} />
+            <Route path="/gems" element={<Gems />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/combo" element={<Combo />} />
+            <Route path="/about-us" element={<AboutUs />} />
 
-    <Footer />
+            {/* Courses */}
+            <Route path="/courses/kp" element={<KP />} />
+            <Route path="/courses/lalcourse" element={<Lalcourse />} />
+            <Route path="/courses/nadi" element={<Nadi />} />
+            <Route path="/courses/numerology" element={<Numerology />} />
+            <Route path="/courses/tarotcourse" element={<Tarotcourse />} />
+            <Route path="/courses/vediccourse" element={<Vediccourse />} />
+            <Route path="/courses/workshops" element={<Workshops />} />
+
+            {/* Services */}
+            <Route path="/service/consultation" element={<Consultation />} />
+            <Route path="/service/pathpooja" element={<PathPooja />} />
+            <Route path="/service/tarot" element={<Tarot />} />
+            <Route path="/service/vastu" element={<Vastu />} />
+          </Routes>
+        </div>
+      </Router>
+
+      <Footer />
     </>
   );
 }

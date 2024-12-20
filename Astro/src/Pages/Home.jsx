@@ -5,18 +5,19 @@ import Jyotishbook from '../Components/HomeComponents/Jyotishbook';
 import GemsHome from '../Components/HomeComponents/GemsHome';
 import Pack from '../Components/HomeComponents/Pack';
 import AppMobile from '../Components/HomeComponents/AppMobile';
-import CourseHome from '../Components/HomeComponents/CourseHome';
+// import Slider from '../Components/HomeComponents/Slider';
 
 function Home() {
   return (
     <div>
       <CustomCarousel />
       <AstroAbout />
-      <Jyotishbook />
-      <CourseHome />
+      {/* <Slider /> */}
       <Pack />
-      <GemsHome/>
       <AppMobile />
+      <Jyotishbook />
+      <GemsHome/>
+
     </div>
   );
 }

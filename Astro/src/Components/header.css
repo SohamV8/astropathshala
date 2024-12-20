@@ -11,39 +11,130 @@
   background-color: #ffffff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   z-index: 1000;
-  margin-bottom: -18px;
-  padding: 8px 0; /* Reduced padding for a cleaner look */
+  padding: 8px 0;
 }
 
 /* Centered Content */
 .head {
   display: flex;
-  justify-content: center; /* Centered content */
+  justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Max width for alignment */
-  padding: 0 15px; /* Reduced padding for a more modern look */
+  max-width: 1200px;
+  padding: 0 15px;
 }
 
 /* Navbar Links */
 .navbar {
   display: flex;
   align-items: center;
-  gap: 50px; /* Increased gap between links */
-  justify-content: center; /* Center the navbar links */
+  gap: 50px;
+  justify-content: center;
 }
 
 .navbar a {
   color: #000000;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
-  font-size: 18px; /* Slightly reduced font size for a clean, modern feel */
+  font-size: 18px;
   font-weight: 500;
-  transition: color 0.2s ease;
+  position: relative;
+  transition: color 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #FFDB58;
+  transition: width 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #FFDB58; /* Highlight color on hover */
+  color: #FFDB58;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Arrow Styling */
+.dropdown-arrow {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg); /* Ensure the arrow stays upright */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position directly under the parent */
+  left: 0;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 100;
+  animation: fadeIn 0.3s ease-in-out;
+  min-width: 180px; /* Adjust based on content */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Align dropdown items in flex-row */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background: #FFDB58;
+  color: #ffffff;
+}
+
+/* Arrow Styling for Dropdown */
+.dropdown::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 5px solid #FFDB58; /* Yellow arrow */
 }
 
 /* Logo Styling */
@@ -72,15 +163,28 @@
   transform: translateY(-50%);
 }
 
+/* Animation for Dropdown */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
   .navbar {
     position: fixed;
-    top: 60px; /* Height of the header */
+    top: 60px;
     left: -100%;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     text-align: center;
     padding-top: 20px;
@@ -93,11 +197,27 @@
 
   .navbar a {
     color: #ffffff;
-    font-size: 24px; /* Adjusted font size for mobile */
+    font-size: 24px;
     margin: 20px 0;
   }
 
   .menu-toggle {
     display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: none;
+    animation: none;
+  }
+
+  .dropdown-menu a {
+    color: #ffffff;
+    background: none;
+  }
+
+  .dropdown-menu a:hover {
+    background: rgba(255, 219, 88, 0.5);
   }
 }
