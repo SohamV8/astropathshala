@@ -53,12 +53,12 @@
   bottom: -5px;
   width: 0;
   height: 2px;
-  background-color: #FFDB58;
+  background-color: #734c00;
   transition: width 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #FFDB58;
+  color: #734c00;
 }
 
 .navbar a:hover::after {
@@ -119,8 +119,7 @@
 }
 
 .dropdown-menu a:hover {
-  background: #FFDB58;
-  color: #ffffff;
+  text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 /* Arrow Styling for Dropdown */
@@ -134,7 +133,7 @@
   height: 10px;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
-  border-top: 5px solid #FFDB58; /* Yellow arrow */
+
 }
 
 /* Logo Styling */
