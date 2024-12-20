@@ -96,7 +96,7 @@ const Products = () => {
       name: 'Suits',
       description: '',
       imgSrc: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRoyxq6LRwGCgxRCQGgthrsVwDTHjaXPF11tnj2874ovwsi14F5AsMVeuX-FURr1_C5dBjtycGZ4vvZrb64ADGc-4Rg7GU7zXipkq7zrCY&usqp=CAE',
-      price: 100,
+      price: 1000,
       discount: 10,
       tags: [
         { name: 'branding', color: '#2FCC32FF' },
@@ -134,7 +134,7 @@ const Products = () => {
               <p>{company.description}</p>
 
               <div className="price-details">
-                <span className="price">${(company.price - (company.price * company.discount) / 100).toFixed(2)}</span>
+                <span className="price">₹{(company.price - (company.price * company.discount) / 100).toFixed(2)}</span>
                 <span className="discount">{company.discount}% OFF</span>
               </div>
               <div className="actions">

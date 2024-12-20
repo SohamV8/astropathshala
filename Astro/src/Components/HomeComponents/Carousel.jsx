@@ -31,7 +31,7 @@ export function CustomCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden">
       {/* Image container */}
       <div
         className="flex transition-transform duration-1000 ease-in-out"
@@ -44,7 +44,7 @@ export function CustomCarousel() {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-[80vh] object-cover flex-shrink-0"
+            className="w-full h-[90vh] object-cover flex-shrink-0"
           />
         ))}
       </div>

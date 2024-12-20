@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './CourseHome.css';
 
-function CourseHome() {
+const CourseHome = () => {
+
   return (
-    <div>
-      
+    <div className="">
+     
     </div>
-  )
-}
+  );
+};
 
-export default CourseHome
+export default CourseHome;

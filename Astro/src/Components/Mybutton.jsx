@@ -69,7 +69,7 @@ const StyledWrapper = styled.div`
   button {
     position: relative;
     padding: 10px 25px;
-    background: #FFD700; /* Golden yellow mustard */
+    background: #734c00; /* Golden yellow mustard */
     font-size: 20px;
     font-weight: 600;
     color: #ffffff; /* White text */
