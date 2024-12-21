@@ -1,11 +1,27 @@
-/* Waves */
-.waves {
+footer {
     position: relative;
+    width: 100%;
+    min-height: 150px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 60px 0;
+    color: #333;
+    z-index: 1000;
+  }
+  
+  .waves {
+    position: relative;
+
+    left: 0;
+    width: 100%;
+    height: 100px;
   }
   
   .wave {
     position: absolute;
-    top: -100px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100px;
@@ -24,24 +40,24 @@
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
-    animation: animatewave 4s linear infinite;
+    animation: animatewave_02 4s linear infinite;
   }
   
   #wave3 {
     z-index: 999;
     opacity: 0.2;
     bottom: 15px;
-    animation: animatewave 3s linear infinite;
+    animation: animatewave_03 3s linear infinite;
   }
   
   #wave4 {
     z-index: 999;
     opacity: 0.7;
     bottom: 20px;
-    animation: animatewave 3s linear infinite;
+    animation: animatewave_04 3s linear infinite;
   }
   
-  /* Wave Animation */
+  /* Wave Animations */
   @keyframes animatewave {
     0% {
       background-position-x: 1000px;
@@ -49,5 +65,42 @@
     100% {
       background-position-x: 0px;
     }
+  }
+  
+  @keyframes animatewave_02 {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animatewave_03 {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animatewave_04 {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  /* Links Hover Effect */
+  .footer-links {
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .footer-links:hover {
+    color: #3586ff;
+    transform: translateY(-2px);
   }
   

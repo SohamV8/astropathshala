@@ -63,6 +63,7 @@ function Header() {
             </Link>
             {dropdownOpen.courses && (
               <div className="dropdown-menu">
+                <Link to="/courses">Popular Courses</Link>
                 <Link to="/courses/kp">K.P Astrology</Link>
                 <Link to="/courses/lalcourse">Lal Kitab</Link>
                 <Link to="/courses/vediccourse">Vedic Astrology</Link>

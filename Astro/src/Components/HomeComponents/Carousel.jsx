@@ -1,29 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import trycar from "../../assets/trycar.png";
 
 export function CustomCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const images = [
-    "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
-    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-    "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-  ];
 
-  // Automatic slide change
+  const images = [trycar, trycar, trycar];
+
   useEffect(() => {
     const interval = setInterval(() => {
-      handleNext(); // Automatically move to the next slide
+      handleNext();
     }, 5000);
-
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);
   }, [activeIndex]);
 
-  // Move to the next slide
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Move to the previous slide
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -31,28 +25,32 @@ export function CustomCarousel() {
   };
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden bg-black">
       {/* Image container */}
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{
-          transform: `translateX(-${activeIndex * 100}%)`, // Move images horizontally
+          transform: `translateX(-${activeIndex * 100}%)`,
         }}
       >
         {images.map((image, index) => (
-          <img
+          <div
             key={index}
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className="w-full h-[90vh] object-cover flex-shrink-0"
-          />
+            className="w-full h-full flex-shrink-0 flex justify-center items-center"
+          >
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
         ))}
       </div>
 
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2  text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full bg-gray-600 bg-opacity-50 hover:bg-gray-700 focus:outline-none"
       >
         <ArrowBackIos fontSize="small" />
       </button>
@@ -60,7 +58,7 @@ export function CustomCarousel() {
       {/* Right Arrow */}
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2  text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full bg-gray-600 bg-opacity-50 hover:bg-gray-700 focus:outline-none"
       >
         <ArrowForwardIos fontSize="small" />
       </button>
