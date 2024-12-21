@@ -21,7 +21,7 @@ import basicAstrologyCourseArtOfPrediction from "../assets/Combo/Basic-Astrology
 import blkAlkAikLk from "../assets/Combo/BLK-+-ALK-+AlK-+-LK.jpg";
 import wealthWorkshop from "../assets/Combo/Wealth+wealth-workshop.jpg";
 import vedicAstrologyCourseBundled from "../assets/Combo/Vedic-Astrology-Course-Bundled.jpg";
-import CourseCard from "../Components/CourseCard";
+import CourseCard from "../Components/Gems-Books/CourseCard";
 
 function Combo() {
   const combo = [
@@ -46,9 +46,7 @@ function Combo() {
     { id: 19, title: "Vedic Astrology Course Bundled", image: vedicAstrologyCourseBundled, originalPrice: "600", discountedPrice: "300" },
   ];
 
-  const handleAddToCart = (course) => {
-    console.log(`${course.title} added to cart!`);
-  };
+ 
 
   return (
     <div>

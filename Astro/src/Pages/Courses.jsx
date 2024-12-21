@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CourseCard from "../Components/CourseCard";
+import CourseCard from "../Components/Gems-Books/CourseCard";
 import EducationStudyNadiAstrology from '../assets/Course/Education-&-Study-by-Nadi-Astrology.jpg';
 import FalitKarnaSeekhe from '../assets/Course/Falit-krna-seekhe.jpg';
 import HealthLongevityNadiAstrology from '../assets/Course/Health-&-Longevity-by-Nadi-Astrology.jpg';
