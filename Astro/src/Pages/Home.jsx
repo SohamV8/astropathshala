@@ -5,15 +5,17 @@ import Jyotishbook from '../Components/HomeComponents/Jyotishbook';
 import GemsHome from '../Components/HomeComponents/GemsHome';
 import Pack from '../Components/HomeComponents/Pack';
 import AppMobile from '../Components/HomeComponents/AppMobile';
-// import Slider from '../Components/HomeComponents/Slider';
+import Slider from '../Components/HomeComponents/Slider';
+import ServiceHome from '../Components/HomeComponents/ServiceHome';
 
 function Home() {
   return (
     <div>
       <CustomCarousel />
       <AstroAbout />
-      {/* <Slider /> */}
+      <Slider />
       <Pack />
+      <ServiceHome />
       <AppMobile />
       <Jyotishbook />
       <GemsHome/>

@@ -7,13 +7,22 @@
   display: contents;
 }
 
+.text-courses{
+  display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
 .wrapperslide {
     z-index: 100;
   margin-top: 2rem;
   width: 90%;
   max-width: 1536px;
   margin-inline: auto;
-  height: 394px;
+  height: 275px;
   position: relative;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -39,8 +48,9 @@
 
 .itemLeft,
 .itemRight {
-  width: 275px;
-  height: 394px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 300px;
+  height: 225px;
   position: absolute;
   animation-timing-function: linear;
   animation-duration: 30s;
@@ -99,7 +109,7 @@
 }
 
 h1.get{
-color: white;
+color: rgb(0, 0, 0);
 font-size: 56px;
 justify-content: center;
 text-align: center;

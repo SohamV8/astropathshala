@@ -1,13 +1,14 @@
 import React from 'react';
 import './slider.css';
-import img1 from '../../assets/1.png';
-import img2 from '../../assets/2.png';
-import img3 from '../../assets/3.png';
-import img4 from '../../assets/4.png';
-import img5 from '../../assets/5.png';
-import img6 from '../../assets/6.png';
-import img7 from '../../assets/7.png';
-import img8 from '../../assets/8.png';
+import MyButton from '../Mybutton';
+import img1 from '../../assets/Course/Practical-Palmistry-Course.jpg';
+import img2 from '../../assets/Course/Divisional-Charts.jpg';
+import img3 from '../../assets/Course/Lal-Kitab-App-Thumbnail.jpg';
+import img4 from '../../assets/Course/Art-Of-Prediction-Advance.jpg';
+import img5 from "../../assets/Combo/Vedic-Astrology-Course-Bundled.jpg";
+import img6 from "../../assets/Combo/all-nadi-astrology-course.jpg";
+import img7 from "../../assets/Combo/5-lal-kitab-courses.jpg";
+import img8 from '../../assets/Course/Advance-Astrology-by-pratap-sheel.jpg';
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
@@ -27,7 +28,10 @@ const Slider = () => {
   return (
     <div className="sliding">
       <div className="wrapperslide">{itemsLeft}</div>
-      <h1 className='get'>GET <span className='hand'>HandWritten Notes</span></h1>
+      <div className="text-courses">
+      <h1 className='get'>GET <span className='hand'> VARIETY OF COURSES</span></h1>
+      <MyButton text='Buy Now'/>
+      </div>
       <div className="wrapperslide">{itemsRight}</div>
     </div>
   );

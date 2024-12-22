@@ -1,0 +1,115 @@
+/* Service Card Container */
+.service-card {
+    display: flex;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffa45b;
+    color: #ffffff;
+}
+
+/* Rotating Image */
+.service-rotating-image {
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    transform: translate(-50%, -50%);
+    background: url("../../assets/object1.png") no-repeat center/cover;
+    animation: rotate 15s linear infinite;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Image Container */
+.service-image-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.service-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-main-image {
+    transform: scale(1.1);
+}
+
+/* Heading */
+.service-card-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    z-index: 1;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+.service-card:hover .service-card-heading {
+    color: #ffffff;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Paragraph */
+.service-card-paragraph {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-card-paragraph {
+    color: #ffffff;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Button */
+.service-card-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .service-card-button {
+    background-color: #ffffff;
+    color: #ffa45b;
+    transform: scale(1.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

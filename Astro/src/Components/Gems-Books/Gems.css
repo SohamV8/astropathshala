@@ -1,126 +1,77 @@
 .custom-ring-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: rgb(254, 255, 240);
-  }
-  
-  .gem-image {
-    position: absolute;
-    width: 150px;
-    height: auto;
-    transform: translate(-50%, -50%);
-    opacity: 0.8;
-    will-change: transform;
-    transition: transform 0.3s ease-out;
-    animation: float 6s ease-in-out infinite; /* Floating animation */
-  }
-  
-  /* Create smooth floating effect */
-  @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px); /* Lift the image up */
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  
-  .image1 { top: 15%; left: 10%; }
-  .image2 { top: 30%; left: 65%; }
-  .image3 { top: 65%; left: 55%; }
-  .image4 { top: 65%; left: 80%; }
-  .image5 { top: 30%; left: 45%; }
-  .image7 { top: 45%; left: 90%; }
-  .image8 { top: 55%; left: 10%; }
-  .image9 { top: 38%; left: 25%; }
-  .image11 { top: 15%; left: 80%; }
-  .image12 { top: 75%; left: 30%; }
-  
-  .text-gems {
-    text-align: center;
-    z-index: 10;
-    color: #4a2f1c;
-    font-family: 'Cinzel', serif;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .text-gems h1 {
-      font-size: 2rem;
-    }
-  
-    .text-gems h3 {
-      font-size: 1.2rem;
-    }
-  }
-  
-  
-  @media (min-width: 768px) and (max-width: 1300px) {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(254, 255, 240);
+}
 
-  
-    .gif-img {
-      max-width: 150px;
-    }
-  
-    .Homepagetry .animate1 {
-      top: 60%;
-      left: 35%;
-    }
-    
-    .Homepagetry .animate2 {
-      top: 14%;
-      left: 65%;
-    }
-    
-    .Homepagetry .animate3 {
-      top: 70%;
-      left: 60%;
-    }
-    
-    .Homepagetry .animate4 {
-      top: 60%;
-      left: 85%;
-      width: 120px;
-    }
-    
-    .Homepagetry .animate5 {
-      top: 10%;
-      left: 28%;
-    }
-    
-    
-    .Homepagetry .animate7 {
-      top: 70%;
-      left: 15%;
-    }
-    
-    .Homepagetry .animate8 {
-      top: 15%;
-      left: -3%;
-    }
-    
-    .Homepagetry .animate9 {
-      top: 33%;
-      left: 85%;
-      width: 130px;
-    }
-      
-    .Homepagetry .animate11 {
-      top: 15%;
-      left: 85%;
-      width: 100px;
-    }
-    
-    .Homepagetry .animate12 {
-      top: 50%;
-      left: -1%;
-    }
+.gem-image {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
   }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.image1 { top: 15%; left: 10%; }
+.image2 { top: 30%; left: 65%; }
+.image3 { top: 60%; left: 55%; }
+.image4 { top: 60%; left: 75%; }
+.image5 { top: 20%; left: 45%; }
+.image7 { top: 45%; left: 80%; }
+.image8 { top: 45%; left: 10%; }
+.image9 { top: 25%; left: 25%; }
+.image10 { top: 38%; left: 25%; }
+.image11 { top: 15%; left: 80%; }
+.image12 { top: 70%; left: 30%; }
+
+.text-gems {
+  text-align: center;
+  z-index: 10;
+  color: #4a2f1c;
+  font-family: 'Cinzel', serif;
+}
+
+.text-gems h1, .text-gems h3 {
+  margin: 0;
+}
+
+.text-gems h1 {
+  font-size: 2.5rem;
+}
+
+.text-gems h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .text-gems h1 {
+    font-size: 2rem;
+  }
+  .text-gems h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .gem-image {
+    width: 100px;
+  }
+}
