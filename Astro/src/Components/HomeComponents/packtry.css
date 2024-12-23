@@ -1,77 +1,60 @@
 /* Full screen container */
 .full-screen-container {
-    position: relative;
-    width: 100%;
-    height: 80vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  /* Parallax images setup */
-  .parallax-images-new {
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 200px;
-    z-index: -1;
-    pointer-events: none;
-    flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  }
-  
-
-  .try-images {
-    width: 50%; /* Adjust as needed */
-    height: auto;
-    object-fit: contain; /* Maintain aspect ratio */
-    opacity: 0.9;
-    transform: scale(1.1); /* Slight scale for better visual effect */
-    transition: transform 0.2s ease, opacity 0.4s ease; /* Smooth transitions for hover effects */
-  }
-  
-
-/* Initial positions for animations */
-.left-image {
-    transform: translateX(-100vw); /* Start off-screen to the left */
-  }
-  
-  .right-image {
-    transform: translateX(100vw); /* Start off-screen to the right */
-  }
-  
-  /* Hover effects */
-  .try-images:hover {
-    transform: scale(1.2); /* Enlarge slightly on hover */
-    opacity: 1; /* Full opacity on hover */
-  }
-
-  /* Center text */
-  .Package-text {
-    z-index: 10;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-  }
-  
-.Package-text h1 {
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
-  letter-spacing: 2px; /* Slight spacing for elegance */
 }
 
-.Package-text h3 {
-  font-size: 1.5rem;
-  max-width: 700px;
+/* Container for the images */
+.parallax-images-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Push images behind the text */
+  pointer-events: none; /* Prevent interactions */
+}
+
+/* Large images styling */
+.parallax-image {
+  width: 40%; /* Adjust size for large images */
+  height: auto;
+  opacity: 0; /* Initially hidden */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.left-image {
+  transform: translateX(-150%); /* Off-screen left */
+}
+
+.right-image {
+  transform: translateX(150%); /* Off-screen right */
+}
+
+/* Package text styling */
+.package-text {
+  z-index: 10; /* Bring text to the front */
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.package-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.package-text h3 {
+  font-size: 1.2rem;
+  max-width: 600px;
   margin: 0 auto;
-  font-weight: 300;
-  color: #555555;
-  line-height: 1.5; /* Better readability */
+  line-height: 1.6;
+  color: #555;
 }

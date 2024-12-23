@@ -2,7 +2,6 @@ import React from 'react'
 import trycar from "../assets/trycar.png";
 import Logo from '../assets/logo.png';
 import main1 from '../assets/Guru ji/main1.png';
-import VideoYT from '../Components/VideoYT';
 
 
 function AboutUs() {
@@ -58,7 +57,6 @@ function AboutUs() {
 </div>
 
 
-<VideoYT/>
     </div>
   )
 }

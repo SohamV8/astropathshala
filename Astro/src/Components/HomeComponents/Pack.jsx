@@ -11,38 +11,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Pack() {
   useEffect(() => {
-    // Left image animation
+    // Animate left image
     gsap.fromTo(
       '.left-image',
-      { x: '-100vw', opacity: 0 }, // Start off-screen with opacity 0
+      { x: '-150%', opacity: 0 }, // Start far left and invisible
       {
-        x: '0vw', // Move into view
+        x: '0%', // Slide to normal position
         opacity: 1, // Fade in
+        duration: 1.8, // Smooth animation duration
         ease: 'power3.out', // Smooth easing
-        duration: 2, // Duration for the smooth effect
         scrollTrigger: {
-          trigger: '.parallax-images-new',
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 1, // Continuous scrolling effect
+          trigger: '.parallax-images-container', // Start animation when this container is in view
+          start: 'top 80%',
         },
       }
     );
 
-    // Right image animation
+    // Animate right image
     gsap.fromTo(
       '.right-image',
-      { x: '100vw', opacity: 0 }, // Start off-screen with opacity 0
+      { x: '150%', opacity: 0 }, // Start far right and invisible
       {
-        x: '0vw', // Move into view
+        x: '0%', // Slide to normal position
         opacity: 1, // Fade in
-        ease: 'power3.out', // Smooth easing
-        duration: 2, // Duration for the smooth effect
+        duration: 1.8,
+        ease: 'power3.out',
         scrollTrigger: {
-          trigger: '.parallax-images-new',
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 1, // Continuous scrolling effect
+          trigger: '.parallax-images-container',
+          start: 'top 80%',
         },
       }
     );
@@ -50,22 +46,26 @@ function Pack() {
 
   return (
     <div className="full-screen-container">
-      <div className="parallax-images-new">
+      {/* Images */}
+      <div className="parallax-images-container">
         <img
           src={lalKitab}
-          alt="lal-kitab"
-          className="try-images left-image"
+          alt="Lal Kitab"
+          className="parallax-image left-image"
         />
         <img
           src={vedic}
-          alt="Vedic-astrology"
-          className="try-images right-image"
+          alt="Vedic Astrology"
+          className="parallax-image right-image"
         />
       </div>
 
-      <div className="Package-text">
+      {/* Package text */}
+      <div className="package-text">
         <h1 className="text-4xl font-bold">Package</h1>
-        <h3 className="text-lg max-w-lg mx-auto mb-6">Learn from our package</h3>
+        <h3 className="text-lg max-w-lg mx-auto mb-6">
+          Learn from our package
+        </h3>
         <MyButton text="Buy Now" />
       </div>
     </div>
