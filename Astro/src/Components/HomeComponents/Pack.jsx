@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import './packtry.css';
 import MyButton from '../Mybutton';
-import Book from '../../assets/Untitled-1.png';
+import vedic from '../../assets/vedic.png';
+import lalKitab from '../../assets/lal-kitab.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -51,12 +52,12 @@ function Pack() {
     <div className="full-screen-container">
       <div className="parallax-images-new">
         <img
-          src={Book}
+          src={lalKitab}
           alt="lal-kitab"
           className="try-images left-image"
         />
         <img
-          src={Book}
+          src={vedic}
           alt="Vedic-astrology"
           className="try-images right-image"
         />

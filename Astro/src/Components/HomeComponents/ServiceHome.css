@@ -18,7 +18,7 @@
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #ffa45b;
+    background: linear-gradient(135deg, #ffa45b, #ff7e00);
     color: #ffffff;
 }
 
