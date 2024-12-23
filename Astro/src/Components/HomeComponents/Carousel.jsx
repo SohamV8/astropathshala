@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import trycar from "../../assets/trycar.png";
 
-export function CustomCarousel() {
+export function CustomCarousel({
+  images = [], // Array of images
+  interval = 5000, // Time in milliseconds for auto-slide
+  customStyles = {}, // Optional custom styles
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const images = [trycar, trycar, trycar];
-
   useEffect(() => {
-    const interval = setInterval(() => {
+    const autoSlide = setInterval(() => {
       handleNext();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [activeIndex]);
+    }, interval);
+    return () => clearInterval(autoSlide);
+  }, [activeIndex, interval]);
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -24,8 +25,15 @@ export function CustomCarousel() {
     );
   };
 
+  if (!images.length) {
+    return <p className="text-center text-gray-500">No images to display</p>;
+  }
+
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden bg-black">
+    <div
+      className={`relative w-full h-[90vh] overflow-hidden bg-black`}
+      style={customStyles}
+    >
       {/* Image container */}
       <div
         className="flex transition-transform duration-1000 ease-in-out"

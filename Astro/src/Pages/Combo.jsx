@@ -12,7 +12,6 @@ import palmistryAdvanceLalKitab from "../assets/Combo/palmistry+Advance-lal-kita
 import palmistryLalKitab from "../assets/Combo/palmistry+lal-kitab.jpg";
 import pkAaopMa from "../assets/Combo/pk+aaop+ma.jpg";
 import rinWealthPitra from "../assets/Combo/rin+wealth+pitra.jpg";
-import fiveLalKitabCourses from "../assets/Combo/5-lal-kitab-courses.jpg";
 import basicAdvanceArtOfPrediction from "../assets/Combo/Basic-+-Advance-Art-of-Prediction.jpg";
 import baAdvanceAop from "../assets/Combo/BA+Advance-Aop.jpg";
 import baAopAdvanceAop from "../assets/Combo/BA+aop+Advance-Aop.jpg";
@@ -35,7 +34,6 @@ function Combo() {
     { id: 8, title: "Palmistry + Lal Kitab", image: palmistryLalKitab, originalPrice: "200", discountedPrice: "100" },
     { id: 9, title: "PK + AAOP + MA", image: pkAaopMa, originalPrice: "400", discountedPrice: "200" },
     { id: 10, title: "Rin Wealth Pitra", image: rinWealthPitra, originalPrice: "360", discountedPrice: "180" },
-    { id: 11, title: "5 Lal Kitab Courses", image: fiveLalKitabCourses, originalPrice: "600", discountedPrice: "300" },
     { id: 12, title: "Basic + Advance Art of Prediction", image: basicAdvanceArtOfPrediction, originalPrice: "500", discountedPrice: "250" },
     { id: 13, title: "BA + Advance AOP", image: baAdvanceAop, originalPrice: "420", discountedPrice: "210" },
     { id: 14, title: "BA + AOP + Advance AOP", image: baAopAdvanceAop, originalPrice: "540", discountedPrice: "270" },
@@ -46,23 +44,48 @@ function Combo() {
     { id: 19, title: "Vedic Astrology Course Bundled", image: vedicAstrologyCourseBundled, originalPrice: "600", discountedPrice: "300" },
   ];
 
- 
+  const popularComboIds = [19, 17, 1, 15, 14];
 
   return (
     <div>
-      <Pack />
-      <div className="flex flex-wrap justify-center gap-6 px-4 py-6">
+  <Pack />
+  <div className="py-10 px-6">
+    {/* Popular Combo Courses Section */}
+    <div className="flex flex-col items-center mb-12">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">Popular Combo Courses</h1>
+      <div className="flex flex-wrap justify-center gap-6">
+        {combo
+          .filter((course) => popularComboIds.includes(course.id))
+          .map((course) => (
+            <CourseCard
+              key={course.id}
+              image={course.image}
+              title={course.title}
+              originalPrice={`₹${course.originalPrice}`}
+              discountedPrice={`₹${course.discountedPrice}`}
+            />
+          ))}
+      </div>
+    </div>
+<br></br>
+    {/* All Combo Courses Section */}
+    <div className="flex flex-col items-center">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">All Combo Courses</h1>
+      <div className="flex flex-wrap justify-center gap-6">
         {combo.map((course) => (
           <CourseCard
             key={course.id}
             image={course.image}
             title={course.title}
             originalPrice={`₹${course.originalPrice}`}
-        discountedPrice={`₹${course.discountedPrice}`}
+            discountedPrice={`₹${course.discountedPrice}`}
           />
         ))}
       </div>
     </div>
+  </div>
+</div>
+
   );
 }
 

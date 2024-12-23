@@ -40,10 +40,9 @@ function Header() {
             </Link>
             {dropdownOpen.services && (
               <div className="dropdown-menu">
+                <Link to="/service">All Services</Link>
                 <Link to="/service/consultation">Consultation</Link>
                 <Link to="/service/pathpooja">Path Pooja</Link>
-                <Link to="/service/tarot">Tarot</Link>
-                <Link to="/service/vastu">Vastu</Link>
               </div>
             )}
           </div>

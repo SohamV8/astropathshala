@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Vastu() {
+function Problems() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Vastu() {
   )
 }
 
-export default Vastu
+export default Problems

@@ -24,8 +24,7 @@ import Workshops from './Pages/Courses/Workshops';
 // Importing Services
 import Consultation from './Pages/Service/Consultation';
 import PathPooja from './Pages/Service/PathPooja';
-import Tarot from './Pages/Service/Tarot';
-import Vastu from './Pages/Service/Vastu';
+import WhatsappButton from './Components/WhatsappButton';
 
 function App() {
   return (
@@ -56,12 +55,10 @@ function App() {
             {/* Services */}
             <Route path="/service/consultation" element={<Consultation />} />
             <Route path="/service/pathpooja" element={<PathPooja />} />
-            <Route path="/service/tarot" element={<Tarot />} />
-            <Route path="/service/vastu" element={<Vastu />} />
           </Routes>
         </div>
       </Router>
-
+<WhatsappButton />
       <Footer />
     </>
   );

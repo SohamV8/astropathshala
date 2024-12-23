@@ -1,0 +1,109 @@
+.dynamic-card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .dynamic-card:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+  }
+  .dynamic-card-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dynamic-card-circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid var(--clr);
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+  }
+  .dynamic-card:hover .dynamic-card-circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+  }
+  .dynamic-card-logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .dynamic-card:hover .dynamic-card-logo {
+    transform: scale(0);
+    transition-delay: 0s;
+  }
+  .dynamic-card-product-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+  }
+  .dynamic-card:hover .dynamic-card-product-img {
+    transition-delay: 0.75s;
+    top: 55%;
+    left: 82%;
+    height: 320px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  }
+  .dynamic-card-content {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+  .dynamic-card:hover .dynamic-card-content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 3px;
+    margin-top: 15px;
+  }
+  .dynamic-card-content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  .dynamic-card-content p {
+    color: #fff;
+  }
+  .dynamic-card-content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+  }
