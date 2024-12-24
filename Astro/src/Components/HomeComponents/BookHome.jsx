@@ -6,7 +6,7 @@ import MyButton from "../Mybutton";
 
 function BookHome() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center p-8 lg:p-16 gap-12 min-h-screen">
+    <div className="flex flex-col lg:flex-row items-center justify-center mx-10 p-8 lg:p-16 gap-12 min-h-screen">
       {/* Left Section - Text */}
       <div className="flex-1 text-center lg:text-left">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
@@ -50,7 +50,9 @@ function BookHome() {
             </div>
           </div>
         </div>
+        <div className="button-book my-9">
         <MyButton text="Buy Now"/>
+        </div>
       </div>
 
       {/* Right Section - Image */}

@@ -63,7 +63,7 @@ const ImageContainer = styled.div`
 const RotatingImage = styled.img`
   height: 650px;
   width: 650px;
-  animation: rotate 30s linear infinite;
+  animation: rotate 50s linear infinite;
 `;
 
 const OverlappingImage = styled.img`

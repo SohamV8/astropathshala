@@ -161,46 +161,33 @@ function PathPoojapage() {
   return (
     <>
       <CustomCarousel images={[trycar, trycar, trycar]} interval={4000} />
-      <div className="min-h-screen p-6">
+      <div className="min-h-screen py-12 flex flex-col items-center">
   {/* Navgrah Pooja Section */}
-  <div className="navgrah-pooja text-center my-12">
-    <h1 className="text-4xl font-bold text-gray-800 mb-4">Navgrah Pooja</h1>
-    <img src={underline} alt="underline" className="mx-auto mt-1 w-27" />
-    <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-      The Navgrah Pooja is a unique ritual that is performed to please the
-      nine planets of the solar system. It helps remove negative planetary
-      effects and brings peace, prosperity, and good fortune. Performed by
-      expert priests, this pooja involves chanting sacred mantras and
-      offering prayers on significant occasions like birthdays,
-      anniversaries, or other special events.
-    </p>
-    <a
-      href={whatsappLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-green-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition-all duration-300"
-    >
-      Contact Us
-    </a>
-  </div>
+  <h1 className="text-4xl font-extrabold text-gray-800 mb-6 text-center">
+    Navgrah Pooja
+  </h1>
+  <img src={underline} alt="underline" className="mx-auto mt-1 w-27" />
+  <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl">
+    The Navgrah Pooja is a unique ritual that is performed to please the nine planets of the solar system. It helps remove negative planetary effects and brings peace, prosperity, and good fortune. Performed by expert priests, this pooja involves chanting sacred mantras and offering prayers on significant occasions like birthdays, anniversaries, or other special events.
+  </p>
 
   {/* CourseCard Section */}
-  <div className="courses text-center my-12">
-    <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+  <div className="mb-16">
+    <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
       Explore Navgrah Poojas
     </h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center">
       {/* Map through NavgrahPooja array */}
       {NavgrahPooja.map((pooja, index) => (
-        <div key={index} className="w-full">
+        <div key={index} className="w-full max-w-xs">
           <CourseCard
             image={pooja.image}
             title={pooja.title}
             originalPrice={pooja.originalPrice}
             discountedPrice={pooja.discountedPrice}
             onAddToCart={() => window.open(whatsappLink, "_blank")}
-            whatsappLink={whatsappLink} // Pass the WhatsApp link
-            buttonText="Contact Us" // Set button text to "Contact Us"
+            whatsappLink={whatsappLink}
+            buttonText="Contact Us"
           />
         </div>
       ))}
@@ -208,29 +195,30 @@ function PathPoojapage() {
   </div>
 
   {/* Havan Section */}
-  <div className="courses text-center my-12">
-    <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+  <div className="mb-16">
+    <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
       Explore Havan
     </h2>
     <img src={underline} alt="underline" className="mx-auto mt-1 w-27" />
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center">
       {/* Map through Havan array */}
       {Havan.map((pooja, index) => (
-        <div key={index} className="w-full">
+        <div key={index} className="w-full max-w-xs">
           <CourseCard
             image={pooja.image}
             title={pooja.title}
             originalPrice={pooja.originalPrice}
             discountedPrice={pooja.discountedPrice}
             onAddToCart={() => window.open(whatsappLink, "_blank")}
-            whatsappLink={whatsappLink} // Pass the WhatsApp link
-            buttonText="Contact Us" // Set button text to "Contact Us"
+            whatsappLink={whatsappLink}
+            buttonText="Contact Us"
           />
         </div>
       ))}
     </div>
   </div>
 </div>
+
 
     </>
   );

@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
+import { IonIcon } from "@ionic/react"; // Ensure correct IonIcon import
+import { logoWhatsapp } from "ionicons/icons"; // Import the WhatsApp logo icon
 
 function WhatsappButton() {
-  const whatsappLink = "https://wa.me/919871130487"; // Correctly formatted WhatsApp number
+  const whatsappLink = "https://wa.me/919871130487"; // Correctly formatted WhatsApp link
 
   return (
     <a
@@ -12,10 +14,11 @@ function WhatsappButton() {
       aria-label="Chat on WhatsApp"
       style={{ zIndex: 9999 }} // Ensure high z-index
     >
-      <ion-icon
-        name="logo-whatsapp"
-        style={{ fontSize: '2.3rem' }} // Larger icon size
-      ></ion-icon>
+      <IonIcon
+        icon={logoWhatsapp}
+        className="text-white"
+        style={{ fontSize: "2.3rem" }} // Larger icon size
+      />
     </a>
   );
 }

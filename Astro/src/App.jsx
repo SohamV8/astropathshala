@@ -25,10 +25,12 @@ import Workshops from './Pages/Courses/Workshops';
 import Consultation from './Pages/Service/Consultation';
 import PathPooja from './Pages/Service/PathPooja';
 import WhatsappButton from './Components/WhatsappButton';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <>
+    <Navbar />
       <Router>
         <Header />
         <div className="app-container">
