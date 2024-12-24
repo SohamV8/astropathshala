@@ -8,7 +8,7 @@ function BookCard() {
   return (
     <div className="flex flex-row justify-around space-y-8">
     <div className="dynamic-card">
-      <div className="dynamic-card-circle" style={{ "--clr": "#fd7015" }}>
+      <div className="dynamic-card-circle" style={{ "--clr": "#FBFBE2" }}>
         <img
           src="https://d1yei2z3i6k35z.cloudfront.net/505757/63fa5902f1ab4_216x135.png"
           alt="Logo"
@@ -16,7 +16,7 @@ function BookCard() {
         />
       </div>
       <div className="dynamic-card-content">
-        <h2>Connaissance Illimitée</h2>
+        <h2 className="">Connaissance Illimitée</h2>
         <p>
           Libère le superpouvoir de ton cerveau et développe une connaissance
           illimitée

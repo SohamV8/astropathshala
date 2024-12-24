@@ -56,15 +56,17 @@
   animation-duration: 30s;
   border-radius: 10px;
   animation-iteration-count: infinite;
+  margin-left: 5px; /* Add margin between images */
+  margin-right: 5px; /* Optional for right-side consistency */
 }
 
 .itemLeft {
-  left: max(calc(275px * 8), 100%);
+  left: max(calc((300px + 5px) * 8), 100%); /* Adjust for added margin */
   animation-name: scrollLeft;
 }
 
 .itemRight {
-  right: max(calc(275px * 8), calc(100% + 275px));
+  right: max(calc((300px + 5px) * 8), calc(100% + 300px + 5px)); /* Adjust for added margin */
   animation-name: scrollRight;
 }
 

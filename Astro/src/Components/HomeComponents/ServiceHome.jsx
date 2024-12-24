@@ -3,13 +3,22 @@ import ServiceCard from './ServiceCard';
 import service from '../../assets/service.png';
 import pathpooja from '../../assets/pathpooja.png';
 import vastu from '../../assets/vastu.png';
+import underline from '../../assets/underline1.png';
 
 function ServiceHome() {
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-6 md:px-16 gap-8">
+    <div className="services-wrapper flex flex-col items-center justify-center bg-[#FBFBE2] py-12 px-6 md:px-16 gap-8">
+
       {/* Section Text */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-800">Our Services</h1>
+        <h1 className="text-4xl font-bold text-gray-800 relative">
+          Our Services
+        </h1>
+        <img
+          src={underline}
+          alt="underline"
+          className="mx-auto mt-2 w-27 h-auto object-contain"
+        />
         <h3 className="text-lg text-gray-600 mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, velit.
         </h3>
@@ -18,12 +27,14 @@ function ServiceHome() {
       {/* Main Content */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Left Side Image */}
-        <div className="flex-1">
-          <img
-            src={service}
-            alt="Service"
-            className="w-full h-auto object-cover"
-          />
+        <div className="servimg flex-1 flex justify-center">
+          <div className="max-w-[450px]">
+            <img
+              src={service}
+              alt="Service"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </div>
 
         {/* Right Side Cards */}

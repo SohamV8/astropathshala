@@ -1,6 +1,6 @@
 import React from "react";
 import Pack from "../Components/HomeComponents/Pack";
-
+import underline from '../assets/underline1.png';
 // Importing all the images from assets/Combo
 import allNadiAstrologyCourse from "../assets/Combo/all-nadi-astrology-course.jpg";
 import kpAdvanceKP from "../assets/Combo/kp+advance-kp.jpg";
@@ -53,6 +53,7 @@ function Combo() {
     {/* Popular Combo Courses Section */}
     <div className="flex flex-col items-center mb-12">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Popular Combo Courses</h1>
+      <img src={underline} alt="underline" className="mx-auto mt-1 w-27" />
       <div className="flex flex-wrap justify-center gap-6">
         {combo
           .filter((course) => popularComboIds.includes(course.id))
@@ -71,6 +72,7 @@ function Combo() {
     {/* All Combo Courses Section */}
     <div className="flex flex-col items-center">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">All Combo Courses</h1>
+      <img src={underline} alt="underline" className="mx-auto mt-1 w-27" />
       <div className="flex flex-wrap justify-center gap-6">
         {combo.map((course) => (
           <CourseCard

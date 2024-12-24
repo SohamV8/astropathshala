@@ -33,7 +33,7 @@
     width: 470px;
     height: 470px;
     border-radius: 50%;
-    background: #191919;
+    background: #767522;
     border: 8px solid var(--clr);
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
     transition: 0.5s, background 0.5s;
@@ -88,13 +88,13 @@
     margin-top: 15px;
   }
   .dynamic-card-content h2 {
-    color: #fff;
+    color: #767522;
     text-transform: uppercase;
     font-size: 2em;
     line-height: 1.3em;
   }
   .dynamic-card-content p {
-    color: #fff;
+    color: #767522;
   }
   .dynamic-card-content a {
     position: relative;

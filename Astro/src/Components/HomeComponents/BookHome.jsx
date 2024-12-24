@@ -50,7 +50,7 @@ function BookHome() {
             </div>
           </div>
         </div>
-        <MyButton text="Buy Now" />
+        <MyButton text="Buy Now"/>
       </div>
 
       {/* Right Section - Image */}

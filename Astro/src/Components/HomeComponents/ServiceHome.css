@@ -1,7 +1,8 @@
 /* Service Card Container */
 .service-card {
     display: flex;
-    width: 300px;
+    width: 100%; /* Ensure the card uses available space */
+    max-width: 300px; /* Optional: Constrain the card size */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -112,4 +113,11 @@
     color: #ffa45b;
     transform: scale(1.1);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.services-wrapper .flex-1 {
+    display: flex;
+    flex-wrap: wrap; /* Prevent overlaps */
+    align-items: stretch;
+    justify-content: center;
+    gap: 16px; /* Add space between cards and other elements */
 }

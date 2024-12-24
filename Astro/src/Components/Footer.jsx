@@ -3,14 +3,14 @@ import styled from "styled-components";
 import Applinks from './Applinks';
 import SocialLinks from './SocialLinks';
 import './Footer.css';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/Logo.png';
 
 // Styled Components for additional styling
 const FooterContainer = styled.footer`
   position: relative;
   width: 100%;
   min-height: 150px;
-  background-color: #f0c6c7;
+  background-color: #FBFBE2;
   color: #ffffff;
   padding: 60px 0 30px;
   z-index: 1000;
@@ -57,7 +57,7 @@ function Footer() {
                 alt="Logo"
               />
             </div>
-            <p className="mt-6 max-w-md mx-auto sm:max-w-xs sm:text-left text-black mb-8">
+            <p className="mt-6 max-w-md mx-auto sm:max-w-xs sm:text-left text-[#3d3d3b] mb-8">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -73,12 +73,12 @@ function Footer() {
               { title: 'Contact Us', links: ['Email', 'Phone', 'Address'] },
             ].map((section, idx) => (
               <div key={idx} className="text-center sm:text-left">
-                <p className="text-lg font-medium text-black">{section.title}</p>
+                <p className="text-lg font-medium text-[#767522]">{section.title}</p>
                 <nav className="mt-8">
                   <ul className="space-y-4 text-sm">
                     {section.links.map((link, index) => (
                       <li key={index}>
-                        <a className="text-black transition hover:text-[#734c00]/75" href="/">
+                        <a className="text-[#3d3d3b] transition hover:text-[#767522]/75" href="/">
                           {link}
                         </a>
                       </li>

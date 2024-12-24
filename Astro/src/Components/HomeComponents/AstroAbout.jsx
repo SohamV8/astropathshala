@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 function AstroAbout() {
   return (
-    <div className="flex items-center justify-center space-x-10 p-8">
+    <div className="flex items-center justify-center space-x-10 p-8 h-[90vh] w-full">
       <img 
         src={Logo} 
         alt="Astro Pathshala Logo" 
-        className="w-1/3 h-auto object-contain mr-10"
+        className="w-1/4 h-auto object-contain mr-10"
       />
       <div className="flex flex-col space-y-6 max-w-2xl">
         <h1 className="text-4xl font-semibold text-gray-800 leading-tight">

@@ -46,16 +46,16 @@ const PlaystoreButton = styled.a`
   display: inline-flex;
   align-items: center;
   padding: 10px 15px;
-  border: 2px solid #734c00;
+  border: 2px solid #3d3d3b;
   border-radius: 9999px;
-  background-color: #734c00;
+  background-color: #3d3d3b;
   color: #fff;
   text-decoration: none;
   transition: all 0.2s ease;
 
   &:hover {
     background-color: transparent;
-    color: #000;
+    color: #3d3d3b;
   }
 
   svg {
