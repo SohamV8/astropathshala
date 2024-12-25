@@ -1,8 +1,8 @@
 .social-display-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
@@ -15,19 +15,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    flex: 1;
     gap: 2rem;
     padding: 2rem;
-    border-radius: 12px;
-    width: 100%;
   }
   
   /* Separator */
   .social-display-separator {
-    height: 80%;
-    width: 12px;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 2rem 0;
+    width: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    align-self: stretch;
   }
   
   /* Image Container */
@@ -40,15 +37,15 @@
   }
   
   .social-display-rotating-image {
-    height: 320px;
-    width: 320px;
+    height: 350px;
+    width: 350px;
     animation: rotate 50s linear infinite;
   }
   
   .social-display-overlapping-image {
     position: absolute;
-    height: 270px;
-    width: 270px;
+    height: 320px;
+    width: 320px;
     z-index: 1;
   }
   
@@ -79,9 +76,8 @@
   }
   
   .social-display-thumbnail-box {
-    height: 100px;
-    width: 100px;
-    background-color: white;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -95,8 +91,8 @@
   }
   
   .social-display-thumbnail {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
   }
   

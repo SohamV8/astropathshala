@@ -9,10 +9,10 @@ function BookHome() {
     <div className="flex flex-col lg:flex-row items-center justify-center mx-10 p-8 lg:p-16 gap-12 min-h-screen">
       {/* Left Section - Text */}
       <div className="flex-1 text-center lg:text-left">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4 font-soria">
           Lorem ipsum dolor sit amet
         </h1>
-        <p className="text-gray-600 text-lg leading-relaxed mb-8">
+        <p className="text-gray-600 text-lg leading-relaxed mb-8 font-BKANT">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
           placeat reprehenderit ut cupiditate a veniam voluptate consectetur
           ipsa repudiandae mollitia?
@@ -24,10 +24,10 @@ function BookHome() {
           <div className="flex items-start gap-4">
             <img src={Check} alt="Check Icon" className="w-8 h-8 flex-shrink-0" />
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-gray-800 font-soria">
                 Easy to Understand
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 font-BKANT">
                 Clear explanations and concepts to grasp astrology easily.
               </p>
             </div>
@@ -41,10 +41,10 @@ function BookHome() {
               className="w-8 h-8 flex-shrink-0"
             />
             <div>
-              <h3 className="text-lg font-semibold text-gray-800">
+              <h3 className="text-lg font-semibold text-gray-800 font-soria">
                 Detailed Book on Astrology
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 font-BKANT">
                 Comprehensive insights into various aspects of astrology.
               </p>
             </div>

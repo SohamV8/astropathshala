@@ -3,9 +3,10 @@ import objectImage from "../../assets/apptry.png";
 import appImage from "../../assets/app.png";
 import Applinks from "../Applinks";
 import roundwhite from "../../assets/Logo/roundwhite.png";
-import GSVLogo from "../../assets/Logo/roundwhite.png";
-import Jyotish from "../../assets/Logo/roundwhite.png";
+import GSVLogo from "../../assets/Logo/GSVLogo.png";
+import Jyotish from "../../assets/Logo/Jyotish.png";
 import "./SocialDisplay.css";
+import underline from '../../assets/underline1.png';
 
 function SocialDisplay() {
   return (
@@ -14,8 +15,13 @@ function SocialDisplay() {
       <div className="social-display-store-section">
 
         <div className="social-display-text-container">
-          <h1>Astro Pathshala</h1>
-          <h2>Learn Astrology from the comfort of your home</h2>  
+          <h1 className="font-soria">Astro Pathshala</h1>
+                  <img
+                    src={underline}
+                    alt="underline"
+                    className="mx-auto mt-2 w-27 h-auto object-contain"
+                  />
+          <h2 className="font-BKANT">Learn Astrology from the comfort of your home</h2>  
           </div>
           <Applinks />      
           <div className="social-display-image-container">
@@ -31,8 +37,13 @@ function SocialDisplay() {
       {/* YouTube Channel Section */}
       <div className="social-display-youtube-section">
         <div className="social-display-text-container">
-          <h1>Explore our YouTube Channel</h1>
-          <h2>Get Regular updates on every topic of astrology</h2>
+          <h1 className="font-soria">Explore our YouTube Channel</h1>
+                  <img
+                    src={underline}
+                    alt="underline"
+                    className="mx-auto mt-2 w-27 h-auto object-contain"
+                  />
+          <h2 className="font-BKANT">Get Regular updates on every topic of astrology</h2>
         </div>
         <div className="social-display-youtube-thumbnails">
           <a

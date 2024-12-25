@@ -33,3 +33,31 @@ font-size: 125px;
   .font-OCR {
     font-family: 'OCRAEXT', serif;
   }
+
+  @font-face {
+    font-family: 'cigra';
+    src: url('../../assets/cigra.ttf') format('truetype');
+  }
+  
+  .font-cigra {
+    font-family: 'cigra', serif;
+  }
+
+  @font-face {
+    font-family: 'BKANT';
+    src: url('../../assets/BKANT.ttf') format('truetype');
+  }
+  
+  .font-BKANT {
+    font-family: 'BKANT', serif;
+  }
+  
+  @font-face {
+    font-family: 'ANTQUAB';
+    src: url('../../assets/ANTQUAB.ttf') format('truetype');
+  }
+  
+  .font-ANTQUAB {
+    font-family: 'ANTQUAB', serif;
+  }
+  

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const MyButton = ({ text }) => {
   return (
     <StyledWrapper>
-      <button>
+      <button className='font-ANTQUAB'>
         {text}
         <div className="star-1">
           <svg xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style={{shapeRendering: 'geometricPrecision', textRendering: 'geometricPrecision', imageRendering: 'optimizeQuality', fillRule: 'evenodd', clipRule: 'evenodd'}} version="1.1" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@ const StyledWrapper = styled.div`
   button {
     position: relative;
     padding: 10px 25px;
-    background: #734c00; /* Golden yellow mustard */
+    background: #767522;
     font-size: 20px;
     font-weight: 600;
     color: #ffffff; /* White text */

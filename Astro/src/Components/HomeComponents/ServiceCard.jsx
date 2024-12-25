@@ -14,8 +14,8 @@ const ServiceCard = ({ title, image, description }) => {
       <div className="service-image-container">
         <img src={image} alt={title} className="service-main-image" />
       </div>
-      <h2 className="service-card-heading">{title}</h2>
-      <p className="service-card-paragraph">{description}</p>
+      <h2 className="service-card-heading fon-soria">{title}</h2>
+      <p className="service-card-paragraph font-BKANT">{description}</p>
       <button className="service-card-button">Explore More</button>
     </div>
   );

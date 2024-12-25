@@ -62,8 +62,8 @@ function Pack() {
 
       {/* Package text */}
       <div className="package-text">
-        <h1 className="text-4xl font-bold">Package</h1>
-        <h3 className="text-lg max-w-lg mx-auto mb-6">
+        <h1 className="text-4xl font-bold font-soria">Package</h1>
+        <h3 className="text-lg max-w-lg mx-auto mb-6 font-BKANT">
           Learn from our package
         </h3>
         <MyButton text="Buy Now" />

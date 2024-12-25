@@ -11,7 +11,7 @@ function ServiceHome() {
 
       {/* Section Text */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-800 relative">
+        <h1 className="text-4xl font-bold text-gray-800 relative font-soria">
           Our Services
         </h1>
         <img
@@ -19,7 +19,7 @@ function ServiceHome() {
           alt="underline"
           className="mx-auto mt-2 w-27 h-auto object-contain"
         />
-        <h3 className="text-lg text-gray-600 mt-4">
+        <h3 className="text-lg text-gray-600 mt-4 font-BKANT">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, velit.
         </h3>
       </div>

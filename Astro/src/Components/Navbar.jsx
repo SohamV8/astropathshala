@@ -5,28 +5,28 @@ import acc from '../assets/acc.png';
 
 function Navbar() {
   return (
-    <div className="astropath-header bg-[#0b0c25] text-white flex justify-between items-center px-4 py-1 border-b-[1px] border-[#ffb400]">
+    <div className="astropath-header bg-[#0b0c25] text-white flex justify-between items-center px-2 border-b border-[#ffb400]">
       {/* Left Section: Contact Info */}
-      <div className="flex space-x-8 ">
+      <div className="flex space-x-12 font-BKANT items-center">
         {/* Phone Section */}
         <div className="astropath-phone flex items-center">
-          <IonIcon icon={callOutline} className="text-[#ffb400] text-2xl mr-3" />
           <a
             href="tel:+919871130487"
-            className="text-white hover:text-[#ffb400] transition-colors duration-300"
+            className="flex items-center text-white hover:text-[#ffb400] transition-colors duration-300 text-lg tracking-wider"
           >
+            <IonIcon icon={callOutline} className="text-[#ffb400] text-3xl mr-2" />
             +91 9871130487
           </a>
         </div>
 
         {/* Email Section */}
         <div className="astropath-email flex items-center">
-          <IonIcon icon={mailOutline} className="text-[#ffb400] text-2xl mr-3" />
           <a
-            href="mailto:Astropathshala@Gmail.Com"
-            className="text-white hover:text-[#ffb400] transition-colors duration-300"
+            href="mailto:astropathshala@gmail.Com"
+            className="flex items-center text-white hover:text-[#ffb400] transition-colors duration-300 text-lg tracking-wider"
           >
-            Astropathshala@Gmail.Com
+            <IonIcon icon={mailOutline} className="text-[#ffb400] text-3xl mr-2" />
+            astropathshala@gmail.Com
           </a>
         </div>
       </div>
@@ -41,7 +41,7 @@ function Navbar() {
           <img
             alt="Account Icon"
             src={acc}
-            className="h-10 w-10 object-contain hover:opacity-80 transition-opacity duration-300"
+            className="h-12 w-12 object-contain hover:opacity-80 transition-opacity duration-300"
           />
         </a>
       </div>

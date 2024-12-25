@@ -29,7 +29,7 @@ const Slider = () => {
     <div className="sliding">
       <div className="wrapperslide">{itemsLeft}</div>
       <div className="text-courses">
-      <h1 className='get'>GET <span className='hand'> VARIETY OF COURSES</span></h1>
+      <h1 className='get font-soria'>GET <span className='hand font-soria'> VARIETY OF COURSES</span></h1>
       <MyButton text='Buy Now'/>
       </div>
       <div className="wrapperslide">{itemsRight}</div>

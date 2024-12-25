@@ -17,8 +17,8 @@ function BookCard() {
         />
       </div>
       <div className="dynamic-card-content">
-        <h2 className="">Connaissance Illimitée</h2>
-        <p>
+        <h2 className="font-soria">Connaissance Illimitée</h2>
+        <p className="font-BKANT">
           Libère le superpouvoir de ton cerveau et développe une connaissance
           illimitée
         </p>
