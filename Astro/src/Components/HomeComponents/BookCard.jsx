@@ -3,6 +3,7 @@ import "./BookCard.css"; // Import the CSS file
 import { Link } from "react-router-dom";
 import Check from "../../assets/check.png";
 import Detail from "../../assets/detail.png";
+import PitraBook from "../../assets/Pitra-Book.png";
 
 function BookCard() {
   return (
@@ -10,9 +11,9 @@ function BookCard() {
     <div className="dynamic-card">
       <div className="dynamic-card-circle" style={{ "--clr": "#FBFBE2" }}>
         <img
-          src="https://d1yei2z3i6k35z.cloudfront.net/505757/63fa5902f1ab4_216x135.png"
+          src={PitraBook}
           alt="Logo"
-          className="dynamic-card-logo"
+          className="dynamic-card-logo w-30"
         />
       </div>
       <div className="dynamic-card-content">
