@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="astropath-header bg-[#0b0c25] text-white flex justify-between items-center px-4 py-1 border-b-[1px] border-[#ffb400]">
       {/* Left Section: Contact Info */}
-      <div className="flex space-x-8">
+      <div className="flex space-x-8 ">
         {/* Phone Section */}
         <div className="astropath-phone flex items-center">
           <IonIcon icon={callOutline} className="text-[#ffb400] text-2xl mr-3" />

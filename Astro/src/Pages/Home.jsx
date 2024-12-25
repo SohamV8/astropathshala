@@ -9,6 +9,7 @@ import ServiceHome from '../Components/HomeComponents/ServiceHome';
 import BookHome from '../Components/HomeComponents/BookHome';
 import trycar from "../assets/trycar.png";
 import BookCard from '../Components/HomeComponents/BookCard';
+import SocialDisplay from '../Components/HomeComponents/SocialDisplay';
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       <Pack />
       <ServiceHome />
       <AppMobile />
+      <SocialDisplay />
 <BookHome/>
 <BookCard/>
       <GemsHome/>

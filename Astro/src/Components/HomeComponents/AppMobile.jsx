@@ -5,16 +5,7 @@ import appImage from "../../assets/app.png";
 import Applinks from "../Applinks";
 
 // Global Styles for Animations
-const GlobalStyle = createGlobalStyle`
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-`;
+
 
 const AppMobile = () => {
   return (
@@ -37,7 +28,16 @@ const AppMobile = () => {
     </>
   );
 };
-
+const GlobalStyle = createGlobalStyle`
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
 // Styled Components
 const Container = styled.div`
   display: flex;

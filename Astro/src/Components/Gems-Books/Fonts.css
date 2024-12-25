@@ -11,3 +11,25 @@
     font-weight: 400;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
+
+  @font-face {
+    font-family: 'Soria';
+    src: url('../../assets/Soria.ttf') format('truetype');
+  }
+  
+  .font-soria {
+    font-family: 'Soria', serif;
+  }
+
+  .Booktexthead{
+font-size: 125px;
+  }
+
+ @font-face {
+    font-family: 'OCRAEXT';
+    src: url('../../assets/OCRAEXT.ttf') format('truetype');
+  }
+  
+  .font-OCR {
+    font-family: 'OCRAEXT', serif;
+  }
