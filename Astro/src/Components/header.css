@@ -61,6 +61,21 @@
   color: #734c00;
 }
 
+.dropdown-trigger{
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'ANTQUAB', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 100%; /* Stretch to full width */
+  display: none;
+  transition: color 0.3s ease;
+}
+
 .navbar a:hover::after {
   width: 100%;
 }
@@ -107,6 +122,7 @@
 .dropdown-menu {
   display: flex;
   flex-direction: column; /* Stack items vertically */
+  z-index: 1000;
 }
 
 .dropdown-menu a {
@@ -116,6 +132,7 @@
   text-decoration: none;
   font-size: 16px;
   transition: background 0.3s ease;
+  z-index: 1000;
 }
 
 .dropdown-menu a:hover {
@@ -133,7 +150,7 @@
   height: 10px;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
-
+  z-index: 1000;
 }
 
 /* Logo Styling */
@@ -144,7 +161,7 @@
 }
 
 .logo-img {
-  height: 70px;
+  height: auto;
   width: 70px;
 }
 
@@ -160,6 +177,14 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.mobile-logo{
+  display: none;
+}
+.mobile-logo-img{
+  height: auto;
+  width: 175px;  
 }
 
 /* Animation for Dropdown */
@@ -192,7 +217,7 @@
   }
 
   .logo-img {
-    height: 50px;
+    height: auto;
     width: 50px;
   }
 
@@ -201,6 +226,7 @@
     display: block;
     background: none;
     border: none;
+    z-index: 1000;
     color: #000000;
     font-size: 30px;
     cursor: pointer;
@@ -213,9 +239,10 @@
     right: -100%;
     width: 70%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(255, 255, 229, 0.95);
     backdrop-filter: blur(8px);
     display: flex;
+    color: #000000;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -231,7 +258,7 @@
 
   /* Navbar links */
   .navbar a {
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
     text-align: center;
     padding: 10px 20px;
@@ -271,8 +298,31 @@
     background-color: rgba(255, 219, 88, 0.5);
   }
 
-  /* Dropdown arrow hidden on mobile */
   .dropdown-arrow {
+    display: block;
+  }
+
+  .mobile-logo{
+    display: block;
+  }
+
+  .dropdown-trigger{
+    display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+  }
+
+  .Desktop-Hover{
     display: none;
   }
+
+  .service-link {
+    display: none !important;
+    }
+    .course-link {
+      display: none !important;
+    }
 }

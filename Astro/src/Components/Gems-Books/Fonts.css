@@ -9,10 +9,6 @@
     font-family: 'Soria', serif;
   }
 
-  .Booktexthead{
-font-size: 125px;
-  }
-
  @font-face {
     font-family: 'OCRAEXT';
     src: url('../../assets/OCRAEXT.ttf') format('truetype');

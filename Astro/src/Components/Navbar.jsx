@@ -44,6 +44,7 @@ const ContactLink = styled.a`
 
   @media (max-width: 768px) {
     font-size: 0.9rem;
+    gap: 0.3rem; /* Adjusting space between icon and text for smaller screens */
   }
 `;
 
@@ -86,9 +87,9 @@ function Navbar() {
         </ContactLink>
 
         {/* Email Section */}
-        <ContactLink href="mailto:astropathshala@gmail.Com">
+        <ContactLink href="mailto:astropathshala@gmail.com">
           <Icon icon={mailOutline} />
-          astropathshala@gmail.Com
+          astropathshala@gmail.com
         </ContactLink>
       </LeftSection>
 
