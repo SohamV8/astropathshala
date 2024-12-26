@@ -1,12 +1,11 @@
 import React from 'react'
 
-
-function GemsHome() {
+function Popular() {
   return (
     <div>
-
+      
     </div>
   )
 }
 
-export default GemsHome
+export default Popular

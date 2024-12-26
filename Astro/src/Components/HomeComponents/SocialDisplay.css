@@ -1,143 +1,179 @@
 .social-display-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Store Section */
+.social-display-store-section,
+.social-display-youtube-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Separator */
+.social-display-separator {
+  width: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  align-self: stretch;
+}
+
+/* Image Container */
+.social-display-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.social-display-rotating-image {
+  height: 350px;
+  width: 350px;
+  animation: rotate 50s linear infinite;
+}
+
+.social-display-overlapping-image {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  z-index: 1;
+}
+
+/* Text Container */
+.social-display-text-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-display-text-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.social-display-text-container h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* YouTube Thumbnails */
+.social-display-youtube-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-display-thumbnail-box {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.social-display-thumbnail-box:hover {
+  transform: scale(1.15);
+}
+
+.social-display-thumbnail {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  /* Store Section */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-display-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
   .social-display-store-section,
   .social-display-youtube-section {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  /* Separator */
-  .social-display-separator {
-    width: 2px;
-    background: rgba(0, 0, 0, 0.1);
-    align-self: stretch;
-  }
-  
-  /* Image Container */
-  .social-display-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .social-display-rotating-image {
-    height: 350px;
-    width: 350px;
-    animation: rotate 50s linear infinite;
-  }
-  
-  .social-display-overlapping-image {
-    position: absolute;
-    height: 320px;
-    width: 320px;
-    z-index: 1;
-  }
-  
-  /* Text Container */
-  .social-display-text-container {
     text-align: center;
-    margin-bottom: 1rem;
+    padding: 1rem;
   }
-  
-  .social-display-text-container h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5rem;
+
+  .social-display-rotating-image,
+  .social-display-overlapping-image {
+    height: 200px;
+    width: 200px;
   }
-  
-  .social-display-text-container h2 {
-    font-size: 1.5rem;
-    color: #666;
-    margin-bottom: 1rem;
-  }
-  
-  /* YouTube Thumbnails */
-  .social-display-youtube-thumbnails {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
+
   .social-display-thumbnail-box {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    height: 80px;
+    width: 80px;
   }
-  
-  .social-display-thumbnail-box:hover {
-    transform: scale(1.15);
-  }
-  
+
   .social-display-thumbnail {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
   }
-  
-  /* Animation */
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+
+  .social-display-text-container h1 {
+    font-size: 2rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .social-display-store-section,
-    .social-display-youtube-section {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 1.5rem;
-    }
-  
-    .social-display-rotating-image,
-    .social-display-overlapping-image {
-      height: 200px;
-      width: 200px;
-    }
-  
-    .social-display-thumbnail-box {
-      height: 80px;
-      width: 80px;
-    }
-  
-    .social-display-thumbnail {
-      height: 70%;
-      width: 70%;
-    }
-  
-    .social-display-text-container h1 {
-      font-size: 2rem;
-    }
-  
-    .social-display-text-container h2 {
-      font-size: 1.25rem;
-    }
+
+  .social-display-text-container h2 {
+    font-size: 1.25rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .social-display-container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .social-display-text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .social-display-text-container h2 {
+    font-size: 1rem;
+  }
+
+  .social-display-thumbnail-box {
+    height: 70px;
+    width: 70px;
+  }
+
+  .social-display-thumbnail {
+    height: 100%;
+    width: 100%;
+  }
+
+  .social-display-rotating-image,
+  .social-display-overlapping-image {
+    height: 150px;
+    width: 150px;
+  }
+}

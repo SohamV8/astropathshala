@@ -26,6 +26,7 @@ import Consultation from './Pages/Service/Consultation';
 import PathPooja from './Pages/Service/PathPooja';
 import WhatsappButton from './Components/WhatsappButton';
 import Navbar from './Components/Navbar';
+import Popular from './Pages/Courses/Popular';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
 
             {/* Courses */}
+            <Route path="/courses/Popular" element={<Popular />} />
             <Route path="/courses/kp" element={<KP />} />
             <Route path="/courses/lalcourse" element={<Lalcourse />} />
             <Route path="/courses/nadi" element={<Nadi />} />
@@ -53,7 +55,7 @@ function App() {
             <Route path="/courses/tarotcourse" element={<Tarotcourse />} />
             <Route path="/courses/vediccourse" element={<Vediccourse />} />
             <Route path="/courses/workshops" element={<Workshops />} />
-
+            
             {/* Services */}
             <Route path="/service/consultation" element={<Consultation />} />
             <Route path="/service/pathpooja" element={<PathPooja />} />

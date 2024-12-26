@@ -31,7 +31,7 @@ export function CustomCarousel({
 
   return (
     <div
-      className={`relative w-full h-[90vh] overflow-hidden bg-black`}
+      className={`relative w-full h-[90vh] overflow-hidden bg-black carousel-container`}
       style={customStyles}
     >
       {/* Image container */}
@@ -49,7 +49,7 @@ export function CustomCarousel({
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="max-w-full max-h-full object-contain"
+              className="max-w-full max-h-full object-contain carousel-image"
             />
           </div>
         ))}
@@ -58,7 +58,7 @@ export function CustomCarousel({
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full bg-gray-600 bg-opacity-50 hover:bg-gray-700 focus:outline-none"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 text-white p-2 rounded-full bg-gray-600 bg-opacity-50 hover:bg-gray-700 focus:outline-none carousel-button"
       >
         <ArrowBackIos fontSize="small" />
       </button>
@@ -66,17 +66,17 @@ export function CustomCarousel({
       {/* Right Arrow */}
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full bg-gray-600 bg-opacity-50 hover:bg-gray-700 focus:outline-none"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 text-white p-2 rounded-full bg-gray-600 bg-opacity-50 hover:bg-gray-700 focus:outline-none carousel-button"
       >
         <ArrowForwardIos fontSize="small" />
       </button>
 
       {/* Dots for navigation */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 carousel-dots">
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-3 h-3 rounded-full carousel-dot ${
               activeIndex === index ? "bg-blue-500" : "bg-gray-300"
             }`}
             onClick={() => setActiveIndex(index)}
@@ -88,3 +88,5 @@ export function CustomCarousel({
 }
 
 export default CustomCarousel;
+
+

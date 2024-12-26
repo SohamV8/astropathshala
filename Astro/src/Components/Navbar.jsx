@@ -1,51 +1,108 @@
 import React from 'react';
+import styled from 'styled-components';
 import { IonIcon } from '@ionic/react';
 import { callOutline, mailOutline } from 'ionicons/icons';
 import acc from '../assets/acc.png';
 
+const NavbarContainer = styled.div`
+  background-color: #0b0c25;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ffb400;
+
+  @media (max-width: 768px) {
+    padding: 10px 15px;
+  }
+`;
+
+const LeftSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
+`;
+
+const ContactLink = styled.a`
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'BKANT', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  gap: 0.5rem;
+
+  &:hover {
+    color: #ffb400;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+`;
+
+const Icon = styled(IonIcon)`
+  font-size: 1.75rem;
+  color: #ffb400;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+`;
+
+const RightSection = styled.div`
+  img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+`;
+
 function Navbar() {
   return (
-    <div className="astropath-header bg-[#0b0c25] text-white flex justify-between items-center px-2 border-b border-[#ffb400]">
+    <NavbarContainer>
       {/* Left Section: Contact Info */}
-      <div className="flex space-x-12 font-BKANT items-center">
+      <LeftSection>
         {/* Phone Section */}
-        <div className="astropath-phone flex items-center">
-          <a
-            href="tel:+919871130487"
-            className="flex items-center text-white hover:text-[#ffb400] transition-colors duration-300 text-lg tracking-wider"
-          >
-            <IonIcon icon={callOutline} className="text-[#ffb400] text-3xl mr-2" />
-            +91 9871130487
-          </a>
-        </div>
+        <ContactLink href="tel:+919871130487">
+          <Icon icon={callOutline} />
+          +91 9871130487
+        </ContactLink>
 
         {/* Email Section */}
-        <div className="astropath-email flex items-center">
-          <a
-            href="mailto:astropathshala@gmail.Com"
-            className="flex items-center text-white hover:text-[#ffb400] transition-colors duration-300 text-lg tracking-wider"
-          >
-            <IonIcon icon={mailOutline} className="text-[#ffb400] text-3xl mr-2" />
-            astropathshala@gmail.Com
-          </a>
-        </div>
-      </div>
+        <ContactLink href="mailto:astropathshala@gmail.Com">
+          <Icon icon={mailOutline} />
+          astropathshala@gmail.Com
+        </ContactLink>
+      </LeftSection>
 
       {/* Right Section: Account Image */}
-      <div className="astropath-acc">
+      <RightSection>
         <a
           href="https://app.astropathshala.com/courses"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            alt="Account Icon"
-            src={acc}
-            className="h-12 w-12 object-contain hover:opacity-80 transition-opacity duration-300"
-          />
+          <img alt="Account Icon" src={acc} />
         </a>
-      </div>
-    </div>
+      </RightSection>
+    </NavbarContainer>
   );
 }
 
