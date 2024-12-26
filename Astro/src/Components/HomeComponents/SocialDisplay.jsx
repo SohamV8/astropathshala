@@ -15,7 +15,7 @@ function SocialDisplay() {
       <div className="social-display-store-section">
 
         <div className="social-display-text-container">
-          <h1 className="font-soria">Astro Pathshala</h1>
+          <h1 className="font-soria">Astro Pathshala App</h1>
                   <img
                     src={underline}
                     alt="underline"

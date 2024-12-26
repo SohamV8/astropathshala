@@ -1,11 +1,11 @@
 import React from 'react';
 import './Fonts.css';
 import './Gems.css';
-import placeholderImage from '../../assets/app.png'; // Add a placeholder image file in your project
+import GemsMain from '../../assets/GemsMain.png';
 
 function GemsHero() {
   return (
-    <div className="flex flex-col md:flex-row items-center py-16 px-8 md:px-20 bg--[#fefff0] text-white">
+    <div className="flex flex-col md:flex-row items-center py-16 px-8 md:px-20 bg-[#fefff0] text-white">
       {/* Text Section */}
       <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
         <h1 className="text-5xl font-bold mb-6 leading-tight tracking-wide text-gold text-[#7b4a2b]">
@@ -19,7 +19,7 @@ function GemsHero() {
       {/* Image Section */}
       <div className="flex-1">
         <img
-          src={placeholderImage}
+          src={GemsMain}
           alt="Luxury Gemstone"
           className="w-full h-auto"
         />
