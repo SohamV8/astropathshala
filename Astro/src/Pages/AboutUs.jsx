@@ -1,6 +1,6 @@
 import React from 'react';
 import trycar from "../assets/trycar.png";
-import Logo from '../assets/logo.png';
+import Logo from '../assets/Logo.png';
 import main1 from '../assets/Guru ji/main1.png';
 
 function AboutUs() {
