@@ -1,7 +1,7 @@
 import React, { useState , useEffect} from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/Logo.png';
 import MobileLogo from '../assets/Logo/Mobile-logo.png';
 
 function Header() {
