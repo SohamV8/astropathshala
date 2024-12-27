@@ -4,7 +4,7 @@ import EducationStudyNadiAstrology from '../assets/Course/Education-&-Study-by-N
 import FalitKarnaSeekhe from '../assets/Course/Falit-krna-seekhe.jpg';
 import HealthLongevityNadiAstrology from '../assets/Course/Health-&-Longevity-by-Nadi-Astrology.jpg';
 import JaiminiAstrology from '../assets/Course/Jaimini-Astrology.jpg';
-import KaalSarpYog from '../assets/Course/Kaal-Sarp-Yog.jpg';
+import KaalSarpYog from '../assets/Course/kaal-sarp-yog.jpg';
 import KPBasic from '../assets/Course/Kp-Astrology-Basic.jpg';
 import KundaliniTantra from '../assets/Course/Kundlini-Tantra.jpg';
 import LagnaDhay from '../assets/Course/LagnaDhay.jpg';
