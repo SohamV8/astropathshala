@@ -27,5 +27,5 @@ export default withMT({
       },
     },
   },
-  plugins: [], // Add Tailwind plugins here if needed
+  plugins: [],
 });
