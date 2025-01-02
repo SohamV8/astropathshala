@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './packtry.css';
 import MyButton from '../Mybutton';
-import vedic from '../../assets/vedic.png';
+import vedic from '../../assets/Vedic.png';
 import lalKitab from '../../assets/lal-kitab.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
