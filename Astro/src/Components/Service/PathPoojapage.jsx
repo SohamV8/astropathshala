@@ -6,12 +6,12 @@ import underline from '../../assets/underline1.png';
 
 import ShaniImage from "../../assets/PathPooja/Shani.jpg";
 import MangalImage from "../../assets/PathPooja/Mangal.jpg";
-import ShukraImage from "../../assets/PathPooja/Shukra.jpg";
-import SuryaImage from "../../assets/PathPooja/Surya.jpg";
+import ShukraImage from "../../assets/PathPooja/shukra.jpg";
+import SuryaImage from "../../assets/PathPooja/surya.jpg";
 import ChandraImage from "../../assets/PathPooja/Chandra.jpg";
 import RahuImage from "../../assets/PathPooja/Rahu.jpg";
 import KetuImage from "../../assets/PathPooja/Ketu.jpg";
-import BudhImage from "../../assets/PathPooja/Budh.jpg";
+import BudhImage from "../../assets/PathPooja/budh.jpg";
 import GuruImage from "../../assets/PathPooja/Guru.jpg";
 
 function PathPoojapage() {
