@@ -7,7 +7,6 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom"; // Import Link for routing
 import './Fonts.css';
 
 function CourseCard({ image, title, originalPrice, discountedPrice, route, buttonText = "Get this course" }) {
@@ -16,13 +15,13 @@ function CourseCard({ image, title, originalPrice, discountedPrice, route, butto
       <Card className="w-[325px] h-auto flex flex-col items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-300">
         {/* Card Image with Link */}
         <CardHeader shadow={false} floated={false} className="h-[225px] w-[300px] rounded-t-lg overflow-hidden">
-          <Link to={route}>
+          <a href={route} target="_blank" rel="noopener noreferrer">
             <img
               src={image}
               alt={title}
               className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
             />
-          </Link>
+          </a>
         </CardHeader>
 
         {/* Card Content */}
@@ -42,7 +41,7 @@ function CourseCard({ image, title, originalPrice, discountedPrice, route, butto
 
         {/* Card Footer with Button */}
         <CardFooter className="pt-0 w-full px-4 pb-4">
-          <Link to={route}>
+          <a href={route} target="_blank" rel="noopener noreferrer">
             <Button
               ripple={true}
               fullWidth={true}
@@ -50,7 +49,7 @@ function CourseCard({ image, title, originalPrice, discountedPrice, route, butto
             >
               {buttonText}
             </Button>
-          </Link>
+          </a>
         </CardFooter>
       </Card>
     </div>

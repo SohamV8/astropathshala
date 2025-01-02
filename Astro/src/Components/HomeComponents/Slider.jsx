@@ -5,9 +5,9 @@ import img1 from '../../assets/Course/Practical-Palmistry-Course.jpg';
 import img2 from '../../assets/Course/Divisional-Charts.jpg';
 import img3 from '../../assets/Course/Lal-Kitab-App-Thumbnail.jpg';
 import img4 from '../../assets/Course/Art-Of-Prediction-Advance.jpg';
-import img5 from "../../assets/Combo/Vedic-Astrology-Course-Bundled.jpg";
-import img6 from "../../assets/Combo/all-nadi-astrology-course.jpg";
-import img7 from "../../assets/Combo/5-lal-kitab-courses.jpg";
+import img5 from "../../assets/Combo/combo17.jpg";
+import img6 from "../../assets/Combo/combo9.jpg";
+import img7 from "../../assets/Combo/combo16.jpg";
 import img8 from '../../assets/Course/Advance-Astrology-by-pratap-sheel.jpg';
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8];

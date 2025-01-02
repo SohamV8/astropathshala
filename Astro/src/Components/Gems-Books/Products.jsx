@@ -1,4 +1,4 @@
-import './Products.css'; 
+import './Products.css';
 import Arrow from '../../assets/Arrow.png';
 import { useState } from 'react';
 import './Fonts.css';
@@ -8,66 +8,100 @@ const Products = () => {
 
   const Upratan = [
     {
-      name: 'Dresses',
+      name: 'Feroza',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#d3b19a',
+      price: 700,
+      discount: 15, // Updated discount
+      iconBg: '#E6D2C9', // Soft pastel beige
     },
     {
-      name: 'T-Shirts',
+      name: 'Amethyst',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#70b3b1',
+      price: 700,
+      discount: 20, // Updated discount
+      iconBg: '#C7D8D6', // Gentle pastel teal
     },
     {
-      name: 'Skirts',
+      name: 'Lapis',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#d3b19a',
+      price: 300,
+      discount: 25, // Updated discount
+      iconBg: '#F2E9E4', // Smooth pastel pink
     },
     {
-      name: 'Overcoats',
+      name: 'Sunhela',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#d3b19a',
+      price: 300,
+      discount: 10, // Updated discount
+      iconBg: '#EFE4DB', // Soft pastel cream
     },
     {
-      name: 'Joggers',
+      name: 'Kaka Neeli',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#d3b19a',
+      price: 700,
+      discount: 18, // Updated discount
+      iconBg: '#D9E4E1', // Subtle pastel greenish-blue
     },
     {
-      name: 'Crop Top',
+      name: 'Tiger Eye',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#d3b19a',
+      price: 200,
+      discount: 12, // Updated discount
+      iconBg: '#E8DBCF', // Muted pastel sand
     },
     {
-      name: 'Formal Shirt',
+      name: 'Sulemani Hakik',
       img: '',
-      price: 100,
-      discount: 10,
-      iconBg: '#d3b19a',
+      price: 300,
+      discount: 22, // Updated discount
+      iconBg: '#DFD9E2', // Gentle pastel lavender
     },
     {
-      name: 'Suits',
+      name: 'Mahe Mariam',
+      img: '',
+      price: 300,
+      discount: 14, // Updated discount
+      iconBg: '#E6E2DF', // Soft pastel grayish cream
+    },
+    {
+      name: 'Moonstone',
+      img: '',
+      price: 300,
+      discount: 19, // Updated discount
+      iconBg: '#EBEDEE', // Delicate pastel light gray
+    },
+    {
+      name: 'Peridot',
       img: '',
       price: 1000,
-      discount: 10,
-      iconBg: '#d3b19a',
+      discount: 17, // Updated discount
+      iconBg: '#D1E0CF', // Smooth pastel green
+    },
+    {
+      name: 'Turmuli',
+      img: '',
+      price: 1000,
+      discount: 21, // Updated discount
+      iconBg: '#F4E6DC', // Soft pastel peach
+    },
+    {
+      name: 'Zirkon',
+      img: '',
+      price: 1000,
+      discount: 16, // Updated discount
+      iconBg: '#E9D8D6', // Muted pastel rose
     },
   ];
-  
+
+  const formatPrice = (price) => {
+    return Number(price).toLocaleString('en-IN'); // Ensure price is a number before formatting
+  };
 
   const toggleLike = (index) => {
-    setLiked((prev) => ({ ...prev, [index]: !prev[index] }));
+    setLiked((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
   };
 
   return (
@@ -78,7 +112,7 @@ const Products = () => {
             <div className="card-inner" style={{ '--clr': '#fff' }}>
               <div className="box">
                 <div className="imgBox">
-                  <img src={company.imgSrc} alt={company.name} />
+                  <img src={company.img} alt={company.name} />
                 </div>
                 <div className="icon">
                   <a href="#" className="iconBox" style={{ background: company.iconBg }}>
@@ -90,9 +124,10 @@ const Products = () => {
             <div className="content">
               <h3>{company.name}</h3>
               <p>{company.description}</p>
-
               <div className="price-details">
-                <span className="price">₹{(company.price - (company.price * company.discount) / 100).toFixed(2)}</span>
+                <span className="price">
+                  ₹{formatPrice(company.price)}
+                </span>
                 <span className="discount">{company.discount}% OFF</span>
               </div>
               <div className="actions">
