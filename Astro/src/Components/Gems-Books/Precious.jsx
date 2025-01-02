@@ -18,28 +18,28 @@ function Precious() {
       name: 'Red Coral',
       img: '',
       price: 2000,
-      discount: 10,
+      discount: 20,
       iconBg: '#F4CCCC', // Soft pastel red
     },
     {
       name: 'Pearl',
       img: '',
       price: 2500,
-      discount: 10,
+      discount: 15,
       iconBg: '#F9F9F9', // Smooth pearl white
     },
     {
       name: 'Hessonite',
       img: '',
       price: 3000,
-      discount: 10,
+      discount: 15,
       iconBg: '#E6CCB2', // Soft brown pastel
     },
     {
       name: 'Cats Eye',
       img: '',
       price: 3000,
-      discount: 10,
+      discount: 20,
       iconBg: '#ECECEC', // Gentle grayish pastel
     },
     {
@@ -53,14 +53,14 @@ function Precious() {
       name: 'Ruby',
       img: '',
       price: 6000,
-      discount: 10,
+      discount: 15,
       iconBg: '#FADADD', // Soft pastel pinkish-red
     },
     {
       name: 'White Sapphire',
       img: '',
       price: 17000,
-      discount: 10,
+      discount: 20,
       iconBg: '#F5F5F5', // Gentle off-white
     },
     {

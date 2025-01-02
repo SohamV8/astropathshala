@@ -4,64 +4,56 @@ import CourseCard from "../Gems-Books/CourseCard";
 import trycar from "../../assets/trycar.png";
 import underline from '../../assets/underline1.png';
 
+import ShaniImage from "../../assets/PathPooja/Shani.jpg";
+import MangalImage from "../../assets/PathPooja/Mangal.jpg";
+import ShukraImage from "../../assets/PathPooja/Shukra.jpg";
+import SuryaImage from "../../assets/PathPooja/Surya.jpg";
+import ChandraImage from "../../assets/PathPooja/Chandra.jpg";
+import RahuImage from "../../assets/PathPooja/Rahu.jpg";
+import KetuImage from "../../assets/PathPooja/Ketu.jpg";
+import BudhImage from "../../assets/PathPooja/Budh.jpg";
+import GuruImage from "../../assets/PathPooja/Guru.jpg";
+
 function PathPoojapage() {
   const whatsappLink = "https://wa.me/919871130487";
 
   // Data for the nine planets' poojas
   const NavgrahPooja = [
     {
-      image: "/images/sun-pooja.jpg",
+      image: SuryaImage,
       title: "Surya (Sun) Pooja",
-      originalPrice: "₹4,000",
-      discountedPrice: "₹3,500",
     },
     {
-      image: "/images/moon-pooja.jpg",
+      image: ChandraImage,
       title: "Chandra (Moon) Pooja",
-      originalPrice: "₹3,500",
-      discountedPrice: "₹2,999",
     },
     {
-      image: "/images/mars-pooja.jpg",
+      image: MangalImage,
       title: "Mangal (Mars) Pooja",
-      originalPrice: "₹4,500",
-      discountedPrice: "₹3,800",
     },
     {
-      image: "/images/mercury-pooja.jpg",
+      image: BudhImage,
       title: "Budh (Mercury) Pooja",
-      originalPrice: "₹3,000",
-      discountedPrice: "₹2,700",
     },
     {
-      image: "/images/jupiter-pooja.jpg",
+      image: GuruImage,
       title: "Guru (Jupiter) Pooja",
-      originalPrice: "₹5,000",
-      discountedPrice: "₹4,200",
     },
     {
-      image: "/images/venus-pooja.jpg",
+      image: ShukraImage,
       title: "Shukra (Venus) Pooja",
-      originalPrice: "₹4,000",
-      discountedPrice: "₹3,500",
     },
     {
-      image: "/images/saturn-pooja.jpg",
+      image: ShaniImage,
       title: "Shani (Saturn) Pooja",
-      originalPrice: "₹5,500",
-      discountedPrice: "₹4,800",
     },
     {
-      image: "/images/rahu-pooja.jpg",
+      image: RahuImage,
       title: "Rahu Pooja",
-      originalPrice: "₹4,500",
-      discountedPrice: "₹3,900",
     },
     {
-      image: "/images/ketu-pooja.jpg",
+      image: KetuImage,
       title: "Ketu Pooja",
-      originalPrice: "₹4,500",
-      discountedPrice: "₹3,900",
     },
   ];
 

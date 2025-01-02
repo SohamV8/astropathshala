@@ -19,6 +19,7 @@ import combo14 from "../assets/Combo/combo14.jpg";
 import combo15 from "../assets/Combo/combo15.jpg";
 import combo16 from "../assets/Combo/combo16.jpg";
 import combo17 from "../assets/Combo/combo17.jpg";
+import combo18 from "../assets/Combo/combo18.jpg";
 
 
 import CourseCard from "../Components/Gems-Books/CourseCard";
@@ -39,12 +40,13 @@ function Combo() {
     { id: 12, title: "Basic astrology + Advance art of prediction", image: combo2, originalPrice: "210", discountedPrice: "4000", route: "https://app.astropathshala.com/courses/388195?filterId=33&sortId=7" },
     { id: 13, title: "Basic astrology + Art Of Prediction + Advance Art Of Prediction", image: combo3, originalPrice: "270", discountedPrice: "6000", route: "https://app.astropathshala.com/courses/388200?filterId=33&sortId=7" },
     { id: 14, title: "Basic Numerology + Advance Numerology + Basic Vastu + Advance vastu", image: combo5, originalPrice: "190", discountedPrice: "6000", route: "https://app.astropathshala.com/courses/388209?filterId=33&sortId=7" },
-    { id: 15, title: "Lal Kitab + Varshfal + Grammer + predictive technique with case study", image: combo16, originalPrice: "240", discountedPrice: "33000", route: "https://app.astropathshala.com/courses/593893?filterId=33&sortId=7" },
+    { id: 15, title: "All Lal Kitab Basic to Advance", image: combo16, originalPrice: "240", discountedPrice: "33000", route: "https://app.astropathshala.com/courses/593893?filterId=33&sortId=7" },
     { id: 16, title: "Wealth astrology + wealth Workshop", image: combo11, originalPrice: "80", discountedPrice: "1000", route: "https://app.astropathshala.com/courses/388238?filterId=33&sortId=7" },
-    { id: 17, title: "Vedic Astrology Course Bundled", image: combo17, originalPrice: "300", discountedPrice: "46000", route: "https://app.astropathshala.com/courses/594492?filterId=33&sortId=7" },
+    { id: 17, title: "All Vedic Astrology Course", image: combo17, originalPrice: "300", discountedPrice: "46000", route: "https://app.astropathshala.com/courses/594492?filterId=33&sortId=7" },
+    { id: 18, title: "Power of Houses", image: combo18, originalPrice: "300", discountedPrice: "5800", route: "https://app.astropathshala.com/courses/594492?filterId=33&sortId=7" },
   ];  
 
-  const popularComboIds = [17, 15, 1, 15, 14];
+  const popularComboIds = [17, 15, 1, 9, 14,18];
 
   return (
 <div>
