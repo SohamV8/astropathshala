@@ -81,7 +81,7 @@ function Courses() {
       { id: 27, image: LoveMarriageAndRelationship, title: "Love, Marriage, and Relationship", originalPrice: "200", discountedPrice: "5,044", route: "https://app.astropathshala.com/courses/163540?filterId=1&sortId=7" },
       { id: 28, image: MantraAstrology, title: "Mantra Astrology", originalPrice: "250", discountedPrice: "3,092", route: "https://app.astropathshala.com/courses/168570?filterId=1&sortId=7" },
       { id: 29, image: MarriageAstrology, title: "Marriage Astrology", originalPrice: "180", discountedPrice: "5,044", route: "https://app.astropathshala.com/courses/415220?filterId=1&sortId=7" },
-      { id: 30, image: "Panchang-Jyotish&kundli-milan", title: "Panchang Jyotish & Kundli Milan", originalPrice: "190", discountedPrice: "5,147", route: "https://app.astropathshala.com/courses/276866?filterId=1&sortId=7" },
+      { id: 30, image: PanchangJyotishAndKundliMilan, title: "Panchang Jyotish & Kundli Milan", originalPrice: "190", discountedPrice: "5,147", route: "https://app.astropathshala.com/courses/276866?filterId=1&sortId=7" },
       { id: 31, image: PanchangJyotishAndKundliMilan, title: "Panchang Jyotish & Kundli Milan", originalPrice: "190", discountedPrice: "5,147", route: "https://app.astropathshala.com/courses/276866?filterId=1&sortId=7" },
       { id: 32, image: PitraDosha, title: "Pitra Dosha", originalPrice: "210", discountedPrice: "318", route: "https://app.astropathshala.com/courses/168567?filterId=1&sortId=7" },
       { id: 33, image: PowerTrinesByPratapSheel, title: "Power of trines by prataap sheel", originalPrice: "230", discountedPrice: "1,551", route: "https://app.astropathshala.com/courses/593312?filterId=1&sortId=7" },
