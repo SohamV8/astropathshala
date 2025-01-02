@@ -1,5 +1,5 @@
 import React from "react";
-import Book from "../../assets/book.png";
+import Book from "../../assets/Book.png";
 import Check from "../../assets/check.png";
 import Detail from "../../assets/detail.png";
 import MyButton from "../Mybutton";
