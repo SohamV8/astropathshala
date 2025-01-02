@@ -12,7 +12,7 @@ import ArtOfPredictionAdvance from '../assets/Course/Advance-Art-Of-Prediction.j
 import BasicAstrologyCourse from '../assets/Course/Basic-Astrology-Course.jpg';
 import BasicAstrologyUrmiGupta from '../assets/Course/Basic-Astrology-urmi-gupta.jpg';
 import BasicNumerology from '../assets/Course/Basic-Numerology.jpg';
-import CareerAstrologyByNadiAstrology from '../assets/Course/Career-Astrology-By-Nadi-Astrology.jpg';
+import CareerAstrologyByNadiAstrology from '../assets/Course/Career-astrology-By-Nadi-Astrology.jpg';
 import ChildBirthByNadiAstrology from '../assets/Course/Child-Birth-By-Nadi-Astrology.jpg';
 import DivisionalCharts from '../assets/Course/Divisional-Charts.jpg';
 import EducationAndStudyByNadiAstrology from '../assets/Course/Education-&-Study-by-Nadi-Astrology.jpg';
