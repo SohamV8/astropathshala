@@ -1,50 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-  @font-face {
-    font-family: 'Soria';
-    src: url('../../assets/Soria.ttf') format('truetype');
-  }
-  
-  .font-soria {
-    font-family: 'Soria', serif;
-  }
+@font-face {
+  font-family: 'Soria';
+  src: url('../../assets/Soria.woff2') format('woff2');
+}
 
- @font-face {
-    font-family: 'OCRAEXT';
-    src: url('../../assets/OCRAEXT.ttf') format('truetype');
-  }
-  
-  .font-OCR {
-    font-family: 'OCRAEXT', serif;
-  }
+.font-soria {
+  font-family: 'Soria', serif;
+}
 
-  @font-face {
-    font-family: 'cigra';
-    src: url('../../assets/cigra.ttf') format('truetype');
-  }
-  
-  .font-cigra {
-    font-family: 'cigra', serif;
-  }
+@font-face {
+  font-family: 'OCRAEXT';
+  src: url('../../assets/OCRAEXT.woff2') format('woff2');
+}
 
-  @font-face {
-    font-family: 'BKANT';
-    src: url('../../assets/BKANT.ttf') format('truetype');
-  }
-  
-  .font-BKANT {
-    font-family: 'BKANT', serif;
-  }
-  
-  @font-face {
-    font-family: 'ANTQUAB';
-    src: url('../../assets/ANTQUAB.ttf') format('truetype');
-  }
-  
-  .font-ANTQUAB {
-    font-family: 'ANTQUAB', serif;
-  }
-  
+.font-OCR {
+  font-family: 'OCRAEXT', serif;
+}
+
+@font-face {
+  font-family: 'cigra';
+  src: url('../../assets/cigra.woff2') format('woff2');
+}
+
+.font-cigra {
+  font-family: 'cigra', serif;
+}
+
+@font-face {
+  font-family: 'BKANT';
+  src: url('../../assets/BKANT.woff2') format('woff2');
+}
+
+.font-BKANT {
+  font-family: 'BKANT', serif;
+}
+
+@font-face {
+  font-family: 'ANTQUAB';
+  src: url('../../assets/ANTQUAB.woff2') format('woff2');
+}
+
+.font-ANTQUAB {
+  font-family: 'ANTQUAB', serif;
+}
+
 .font-playfair {  
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;

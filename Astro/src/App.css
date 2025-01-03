@@ -43,3 +43,56 @@
       #fcc545 100%
     );
   }
+
+  @font-face {
+    font-family: 'Soria';
+    src: url('/assets/Soria.woff2') format('woff2');
+  }
+  
+  .font-soria {
+    font-family: 'Soria', serif;
+  }
+  
+  @font-face {
+    font-family: 'OCRAEXT';
+    src: url('/assets/OCRAEXT.woff2') format('woff2');
+  }
+  
+  .font-OCR {
+    font-family: 'OCRAEXT', serif;
+  }
+  
+  @font-face {
+    font-family: 'cigra';
+    src: url('/assets/cigra.woff2') format('woff2');
+  }
+  
+  .font-cigra {
+    font-family: 'cigra', serif;
+  }
+  
+  @font-face {
+    font-family: 'BKANT';
+    src: url('/assets/BKANT.woff2') format('woff2');
+  }
+  
+  .font-BKANT {
+    font-family: 'BKANT', serif;
+  }
+  
+  @font-face {
+    font-family: 'ANTQUAB';
+    src: url('/assets/ANTQUAB.woff2') format('woff2');
+  }
+  
+  .font-ANTQUAB {
+    font-family: 'ANTQUAB', serif;
+  }
+  
+  .font-playfair {  
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
