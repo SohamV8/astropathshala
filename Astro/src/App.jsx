@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
 import Home from './Pages/Home';
@@ -31,7 +31,7 @@ import Popular from './Pages/Courses/Popular';
 function App() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Router>
         <Header />
         <div className="app-container">
@@ -62,7 +62,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-<WhatsappButton />
+      <WhatsappButton />
       <Footer />
     </>
   );
