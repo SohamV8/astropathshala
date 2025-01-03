@@ -7,7 +7,7 @@ import underline from '../../assets/underline1.png';
 
 function ServiceHome() {
   return (
-    <div className="services-wrapper flex flex-col items-center justify-center bg-[#FBFBE2] py-12 px-6 md:px-16 gap-8">
+    <div className="services-wrapper flex flex-col items-center justify-center bg-[#FBFBE2] bg-opacity-50 py-12 px-6 md:px-16 gap-8">
 
       {/* Section Text */}
       <div className="text-center mb-10">

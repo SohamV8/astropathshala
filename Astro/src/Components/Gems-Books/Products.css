@@ -8,7 +8,7 @@
   background-color: transparent;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  background-color: rgb(254, 255, 240);
+  background-color: rgba(254, 255, 240, 0.6);
 }
 
 .trusted-companies .container-gems {
@@ -41,7 +41,7 @@
 .trusted-companies .card-inner {
   position: relative;
   height: 240px;
-  background-color: rgb(254, 255, 240);
+  background-color: rgba(254, 255, 240, 0.6);
 }
 
 .trusted-companies .imgBox {
@@ -61,7 +61,7 @@
   right: -15px;
   width: 80px;
   height: 80px;
-  background: rgb(254, 255, 240);
+  background: rgba(254, 255, 240, 0.6);
   border-top-left-radius: 50%;
   display: flex;
   justify-content: center;

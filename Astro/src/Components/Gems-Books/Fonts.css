@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Soria';
-  src: url('../../assets/Soria.woff2') format('woff2');
+  src: url('../../assets/Fonts/Soria.woff2') format('woff2');
 }
 
 .font-soria {
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'OCRAEXT';
-  src: url('../../assets/OCRAEXT.woff2') format('woff2');
+  src: url('../../assets/Fonts/OCRAEXT.woff2') format('woff2');
 }
 
 .font-OCR {
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'cigra';
-  src: url('../../assets/cigra.woff2') format('woff2');
+  src: url('../../assets/Fonts/cigra.woff2') format('woff2');
 }
 
 .font-cigra {
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: 'BKANT';
-  src: url('../../assets/BKANT.woff2') format('woff2');
+  src: url('../../assets/Fonts/BKANT.woff2') format('woff2');
 }
 
 .font-BKANT {
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'ANTQUAB';
-  src: url('../../assets/ANTQUAB.woff2') format('woff2');
+  src: url('../../assets/Fonts/ANTQUAB.woff2') format('woff2');
 }
 
 .font-ANTQUAB {

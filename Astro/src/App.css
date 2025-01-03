@@ -18,7 +18,14 @@
 
   
   body{
-    background-color: #fdfdfb;
+    background-image: url('./assets/bgmain.png');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-position: center; /* Keeps the image centered */
+    background-attachment: fixed; /* Fixes the image while scrolling */
+    width: 100%; /* Ensures the background spans the full width of the viewport */
+
+
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
@@ -28,7 +35,7 @@
 
 
   body::-webkit-scrollbar {
-    width: 0.2rem;
+    width: 0.3rem;
   }
   
   body::-webkit-scrollbar-track {
@@ -44,55 +51,56 @@
     );
   }
 
-  @font-face {
-    font-family: 'Soria';
-    src: url('/assets/Soria.woff2') format('woff2');
-  }
-  
-  .font-soria {
-    font-family: 'Soria', serif;
-  }
-  
-  @font-face {
-    font-family: 'OCRAEXT';
-    src: url('/assets/OCRAEXT.woff2') format('woff2');
-  }
-  
-  .font-OCR {
-    font-family: 'OCRAEXT', serif;
-  }
-  
-  @font-face {
-    font-family: 'cigra';
-    src: url('/assets/cigra.woff2') format('woff2');
-  }
-  
-  .font-cigra {
-    font-family: 'cigra', serif;
-  }
-  
-  @font-face {
-    font-family: 'BKANT';
-    src: url('/assets/BKANT.woff2') format('woff2');
-  }
-  
-  .font-BKANT {
-    font-family: 'BKANT', serif;
-  }
-  
-  @font-face {
-    font-family: 'ANTQUAB';
-    src: url('/assets/ANTQUAB.woff2') format('woff2');
-  }
-  
-  .font-ANTQUAB {
-    font-family: 'ANTQUAB', serif;
-  }
-  
-  .font-playfair {  
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+  font-family: 'Soria';
+  src: url('./assets/Fonts/Soria.woff2') format('woff2');
+}
+
+.font-soria {
+  font-family: 'Soria', serif;
+}
+
+@font-face {
+  font-family: 'OCRAEXT';
+  src: url('./assets/Fonts/OCRAEXT.woff2') format('woff2');
+}
+
+.font-OCR {
+  font-family: 'OCRAEXT', serif;
+}
+
+@font-face {
+  font-family: 'cigra';
+  src: url('./assets/Fonts/cigra.woff2') format('woff2');
+}
+
+.font-cigra {
+  font-family: 'cigra', serif;
+}
+
+@font-face {
+  font-family: 'BKANT';
+  src: url('./assets/Fonts/BKANT.woff2') format('woff2');
+}
+
+.font-BKANT {
+  font-family: 'BKANT', serif;
+}
+
+@font-face {
+  font-family: 'ANTQUAB';
+  src: url('./assets/Fonts/ANTQUAB.woff2') format('woff2');
+}
+
+.font-ANTQUAB {
+  font-family: 'ANTQUAB', serif;
+}
+
+.font-playfair {  
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
