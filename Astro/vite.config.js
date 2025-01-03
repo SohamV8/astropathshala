@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  base: './',
   assetsInclude: ['**/*.ejs'], // Include .ejs files as assets
   css: {
     postcss: './postcss.config.js', // Explicitly specify PostCSS configuration

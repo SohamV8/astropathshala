@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
 import Home from './Pages/Home';
@@ -27,6 +27,7 @@ import PathPooja from './Pages/Service/PathPooja';
 import WhatsappButton from './Components/WhatsappButton';
 import Navbar from './Components/Navbar';
 import Popular from './Pages/Courses/Popular';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Header />
         <div className="app-container">
           <Routes>
+          <Route path="*" element={<NotFound />} />
             {/* Main Pages */}
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
@@ -47,7 +49,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
 
             {/* Courses */}
-            <Route path="/courses/Popular" element={<Popular />} />
+            <Route path="/courses/popular" element={<Popular />} />
             <Route path="/courses/kp" element={<KP />} />
             <Route path="/courses/lalcourse" element={<Lalcourse />} />
             <Route path="/courses/nadi" element={<Nadi />} />
